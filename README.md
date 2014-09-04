@@ -30,7 +30,7 @@ include the commit ID. For example:
     Ports https://github.com/PolymerLabs/polymer-snippets/blob/ca250355c6d4076f16353fb386c07ca106d6fc4e/snippets/forms/binding-to-a-text-input.html
 
 See https://help.github.com/articles/getting-permanent-links-to-files#press-y-to-permalink-to-a-file-in-a-specific-commit
-for details on how to get a link to with the commit ID.
+for details on how to get a link to the commit ID.
 
 ## Making your snippets Dart-y
 
