@@ -6,6 +6,14 @@ transformers:
 - polymer:
     entry_points: [
         web/basics/binding_to_a_field/index.html,
+        web/basics/binding_to_a_complex_object/index.html,
+        web/basics/binding_to_a_native_html_element/index.html,
+        web/basics/binding_to_a_style/index.html,
+        web/basics/finding_shadow_dom_elements/index.html,
+        web/basics/using_bind_to_create_a_single_template_instance/index.html,
+        web/basics/creating_a_one_time_binding/index.html,
+        web/basics/binding_to_a_computed_property_using_a_getter/index.html,
+
         web/forms/binding_to_a_text_input/index.html]
 environment:
   sdk: ">=1.2.0 <2.0.0"
