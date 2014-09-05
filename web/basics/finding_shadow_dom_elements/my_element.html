@@ -2,7 +2,10 @@
 
 <polymer-element name="my-element">
   <template>
-    <p>My favorite color is {{color}}.</p>
+    <div id="myDiv">
+      <p>Old content</p>
+      <button on-tap="{{findNodes}}">Find nodes</button>
+    </div>
   </template>
   <script type="application/dart" src="my_element.dart"></script>
 </polymer-element>
