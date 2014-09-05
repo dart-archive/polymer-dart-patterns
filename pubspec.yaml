@@ -7,6 +7,7 @@ transformers:
     entry_points: [
         web/basics/binding_to_a_field/index.html,
         web/basics/binding_to_a_complex_object/index.html,
+        web/basics/binding_to_a_map/index.html,
         web/basics/binding_to_a_native_html_element/index.html,
         web/basics/binding_to_a_style/index.html,
         web/basics/finding_shadow_dom_elements/index.html,
