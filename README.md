@@ -14,7 +14,7 @@ a snippet:
 
 - `my_element.html`: the HTML for `<my_element>`
 - `my_element.dart`: the Dart code for `<my_element>`
-- `index.html`: the entry point for the snippet. Import `<my-element>`.
+- ``: the entry point for the snippet. Import `<my-element>`.
 - `README.md`: the documentation for the snippet. This should mirror the
 documentation in the original as much as possible.
 
@@ -39,3 +39,32 @@ All snippets should follow the [Dart Style Guide](https://www.dartlang.org/artic
 Before creating a pull request, please run the sample in Dart Editor, ensuring
 that it runs in both JS and Dartium without errors or warnings.
 
+## Table of Contents
+
+### Basics
+
+- [Binding to a property](web/basics/binding-to-a-property/)
+- [Binding to a complex object](web/basics/binding-to-a-complex-object/)
+- [Binding to a native/ element](web/basics/binding-to-a-native/-element/)
+- [Binding to a style](web/basics/binding-to-a-style/)
+- [Using 'bind' to create a single template instance](web/basics/using-bind-to-create-a-single-template-instance/)
+- [Finding Shadow DOM elements](web/basics/finding-shadow-dom-elements/)
+- [Using a computed property](web/basics/using-a-computed-property/)
+- [Creating a one-time binding](web/basics/creating-a-one-time-binding/)
+
+### Control Flow
+
+- [Conditionally hiding an element](web/control-flow/conditionally-hiding-an-element/)
+- [Getting the iteration index when looping over a collection](web/control-flow/getting-the-iteration-index-when-looping-over-a-collection/)
+- [Looping over a collection using iterative templates](web/control-flow/looping-over-a-collection-using-iterative-templates/)
+- [Using conditional templates](web/control-flow/using-conditional-templates/)
+- [Using template repeat with a table row or an option](web/control-flow/using-template-repeat-with-a-tr-or-an-option/)
+
+### Insertion points
+
+- [Creating an insertion point using the content tag](web/insertion-points/creating-an-insertion-point-using-the-content-tag/)
+- [Creating insertions using the select attribute](web/creating-insertion-points-using-the-select-attribute/)
+
+### Forms
+
+- [Binding to a text input](web/forms/binding-to-a-text-input/)
