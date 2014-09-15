@@ -42,8 +42,9 @@ that it runs in both JS and Dartium without errors or warnings.
 ## Contents
 
 ### Basics
-- [Binding to a property](web/basics/binding_to_a_property/)
+- [Binding to a field](web/basics/binding_to_a_field/)
 - [Binding to a complex object](web/basics/binding_to_a_complex_object/)
+- [Binding to a map](web/basics/binding_to_a_map/)
 - [Binding to a native HTML element](web/basics/binding_to_a_native_html_element/)
 - [Binding to a style](web/basics/binding_to_a_style/)
 - [Using 'bind' to create a single template instance](web/basics/using_bind_to_create_a_single_template_instance/)
@@ -57,12 +58,12 @@ that it runs in both JS and Dartium without errors or warnings.
 - [Getting the iteration index when looping over a collection](web/control_flow/getting_the_iteration_index_when_looping_over_a_collection/)
 - [Looping over a collection using iterative templates](web/control_flow/looping_over_a_collection_using_iterative_templates/)
 - [Using conditional templates](web/control_flow/using_conditional_templates/)
-- [Using template repeat with a table row or an option](web/control_flow/using_template_repeat_with_a_tr_or_an_option/)
+- [Using template repeat with a table row or an option](web/control_flow/using_template_repeat_with_a_table_row_or_an_option/)
 
 ### Insertion points
 
-- [Creating an insertion point using the content tag](web/insertion_points/creating_an_insertion_point_using_the_content_tag/)
-- [Creating insertions using the select attribute](web/creating_insertion_points_using_the_select_attribute/)
+- [Creating an insertion point using the content tag](web/insertion_points/creating_an_insertion_point_using_the_content_tag)
+- [Creating insertions using the select attribute](web/insertion_points/creating_insertion_points_using_the_select_attribute)
 
 ### Forms
 
