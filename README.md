@@ -42,29 +42,28 @@ that it runs in both JS and Dartium without errors or warnings.
 ## Contents
 
 ### Basics
-
-_ [Binding to a property](web/basics/binding_to_a_property/)
-_ [Binding to a complex object](web/basics/binding_to_a_complex_object/)
-_ [Binding to a native HTML element](web/basics/binding_to_a_native_html_element/)
-_ [Binding to a style](web/basics/binding_to_a_style/)
-_ [Using 'bind' to create a single template instance](web/basics/using_bind_to_create_a_single_template_instance/)
-_ [Finding Shadow DOM elements](web/basics/finding_shadow_dom_elements/)
-_ [Using a computed property](web/basics/using_a_computed_property/)
-_ [Creating a one_time binding](web/basics/creating_a_one_time_binding/)
+- [Binding to a property](web/basics/binding_to_a_property/)
+- [Binding to a complex object](web/basics/binding_to_a_complex_object/)
+- [Binding to a native HTML element](web/basics/binding_to_a_native_html_element/)
+- [Binding to a style](web/basics/binding_to_a_style/)
+- [Using 'bind' to create a single template instance](web/basics/using_bind_to_create_a_single_template_instance/)
+- [Finding Shadow DOM elements](web/basics/finding_shadow_dom_elements/)
+- [Using a computed property](web/basics/using_a_computed_property/)
+- [Creating a one_time binding](web/basics/creating_a_one_time_binding/)
 
 ### Control flow
 
-_ [Conditionally hiding an element](web/control_flow/conditionally_hiding_an_element/)
-_ [Getting the iteration index when looping over a collection](web/control_flow/getting_the_iteration_index_when_looping_over_a_collection/)
-_ [Looping over a collection using iterative templates](web/control_flow/looping_over_a_collection_using_iterative_templates/)
-_ [Using conditional templates](web/control_flow/using_conditional_templates/)
-_ [Using template repeat with a table row or an option](web/control_flow/using_template_repeat_with_a_tr_or_an_option/)
+- [Conditionally hiding an element](web/control_flow/conditionally_hiding_an_element/)
+- [Getting the iteration index when looping over a collection](web/control_flow/getting_the_iteration_index_when_looping_over_a_collection/)
+- [Looping over a collection using iterative templates](web/control_flow/looping_over_a_collection_using_iterative_templates/)
+- [Using conditional templates](web/control_flow/using_conditional_templates/)
+- [Using template repeat with a table row or an option](web/control_flow/using_template_repeat_with_a_tr_or_an_option/)
 
 ### Insertion points
 
-_ [Creating an insertion point using the content tag](web/insertion_points/creating_an_insertion_point_using_the_content_tag/)
-_ [Creating insertions using the select attribute](web/creating_insertion_points_using_the_select_attribute/)
+- [Creating an insertion point using the content tag](web/insertion_points/creating_an_insertion_point_using_the_content_tag/)
+- [Creating insertions using the select attribute](web/creating_insertion_points_using_the_select_attribute/)
 
 ### Forms
 
-_ [Binding to a text input](web/forms/binding_to_a_text_input/)
+- [Binding to a text input](web/forms/binding_to_a_text_input/)
