@@ -1,3 +1,5 @@
+library web.control_flow.conditionally_hiding_an_element;
+
 import 'package:polymer/polymer.dart';
 
 @CustomTag('my-element')

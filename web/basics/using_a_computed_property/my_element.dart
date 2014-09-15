@@ -1,3 +1,5 @@
+library web.basics.using_a_computed_property;
+
 import 'package:polymer/polymer.dart';
 
 @CustomTag('my-element')

@@ -1,3 +1,5 @@
+library web.basics.binding_to_a_map;
+
 import 'package:polymer/polymer.dart';
 
 @CustomTag('my-element')

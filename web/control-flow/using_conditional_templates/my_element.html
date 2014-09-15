@@ -1,7 +1,7 @@
 <link rel="import" href="packages/polymer/polymer.html">
 
 <polymer-element name="my-element">
-   <template>
+  <template>
     <template if="{{showAnswer}}">
       <div>42</div>
       <button on-tap="{{toggleView}}">Show question</button>
@@ -13,5 +13,6 @@
       </div>
       <button on-tap="{{toggleView}}">Show answer</button>
     </template>
+  </template>
   <script type="application/dart" src="my_element.dart"></script>
 </polymer-element>

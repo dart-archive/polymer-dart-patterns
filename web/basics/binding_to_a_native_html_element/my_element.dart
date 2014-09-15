@@ -1,3 +1,5 @@
+library web.basics.binding_to_a_native_html_element;
+
 import 'package:polymer/polymer.dart';
 
 @CustomTag('my-element')

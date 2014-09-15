@@ -1,3 +1,5 @@
+library web.basics.using_bind_to_create_a_single_template_instance;
+
 import 'package:polymer/polymer.dart';
 
 class Name {

@@ -1,3 +1,5 @@
+library web.basics.finding_shadow_dom_elements;
+
 import 'package:polymer/polymer.dart';
 
 @CustomTag('my-element')

@@ -1,3 +1,5 @@
+library web.control_flow.using_conditional_templates;
+
 import 'dart:html' show Event, Node;
 import 'package:polymer/polymer.dart';
 

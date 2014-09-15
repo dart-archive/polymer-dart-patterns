@@ -1,3 +1,5 @@
+library web.basics.binding_to_a_complex_object;
+
 import 'package:polymer/polymer.dart';
 
 class Name {

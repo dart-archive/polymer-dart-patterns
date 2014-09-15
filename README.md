@@ -14,7 +14,7 @@ a snippet:
 
 - `my_element.html`: the HTML for `<my_element>`
 - `my_element.dart`: the Dart code for `<my_element>`
-- ``: the entry point for the snippet. Import `<my-element>`.
+- `index.html`: the entry point for the snippet. Imports `<my-element>`.
 - `README.md`: the documentation for the snippet. This should mirror the
 documentation in the original as much as possible.
 
@@ -39,20 +39,20 @@ All snippets should follow the [Dart Style Guide](https://www.dartlang.org/artic
 Before creating a pull request, please run the sample in Dart Editor, ensuring
 that it runs in both JS and Dartium without errors or warnings.
 
-## Table of Contents
+## Contents
 
 ### Basics
 
 - [Binding to a property](web/basics/binding-to-a-property/)
 - [Binding to a complex object](web/basics/binding-to-a-complex-object/)
-- [Binding to a native/ element](web/basics/binding-to-a-native/-element/)
+- [Binding to a native HTML element](web/basics/binding-to-a-native-html-element/)
 - [Binding to a style](web/basics/binding-to-a-style/)
 - [Using 'bind' to create a single template instance](web/basics/using-bind-to-create-a-single-template-instance/)
 - [Finding Shadow DOM elements](web/basics/finding-shadow-dom-elements/)
 - [Using a computed property](web/basics/using-a-computed-property/)
 - [Creating a one-time binding](web/basics/creating-a-one-time-binding/)
 
-### Control Flow
+### Control flow
 
 - [Conditionally hiding an element](web/control-flow/conditionally-hiding-an-element/)
 - [Getting the iteration index when looping over a collection](web/control-flow/getting-the-iteration-index-when-looping-over-a-collection/)
