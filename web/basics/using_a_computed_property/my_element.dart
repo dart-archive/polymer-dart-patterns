@@ -1,4 +1,4 @@
-library example.basics.binding_to_a_field.my_element;
+library web.basics.using_a_computed_property;
 
 import 'package:polymer/polymer.dart';
 

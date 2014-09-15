@@ -1,4 +1,4 @@
-library example.basics.binding_to_a_field.my_element;
+library web.basics.finding_shadow_dom_elements;
 
 import 'package:polymer/polymer.dart';
 

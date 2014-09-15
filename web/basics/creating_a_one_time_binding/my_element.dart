@@ -1,4 +1,4 @@
-library example.basics.binding_to_a_field.my_element;
+library web.basics.creating_a_one_time_binding;
 
 import 'package:polymer/polymer.dart';
 
