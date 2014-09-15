@@ -1,8 +1,8 @@
 # Polymer Snippets
 
-Small, useful snippets/samples that show how to do things the Polymer way.
+Small, useful, snippets/samples that show how to do things the Polymer way.
 
-This project has Dart ports of the polymer.js snippets in
+Port of polymer.js snippets in
 [https://github.com/PolymerLabs/polymer-snippets](https://github.com/PolymerLabs/polymer-snippets).
 
 ## Repo structure
@@ -43,28 +43,28 @@ that it runs in both JS and Dartium without errors or warnings.
 
 ### Basics
 
-- [Binding to a property](web/basics/binding-to-a-property/)
-- [Binding to a complex object](web/basics/binding-to-a-complex-object/)
-- [Binding to a native HTML element](web/basics/binding-to-a-native-html-element/)
-- [Binding to a style](web/basics/binding-to-a-style/)
-- [Using 'bind' to create a single template instance](web/basics/using-bind-to-create-a-single-template-instance/)
-- [Finding Shadow DOM elements](web/basics/finding-shadow-dom-elements/)
-- [Using a computed property](web/basics/using-a-computed-property/)
-- [Creating a one-time binding](web/basics/creating-a-one-time-binding/)
+_ [Binding to a property](web/basics/binding_to_a_property/)
+_ [Binding to a complex object](web/basics/binding_to_a_complex_object/)
+_ [Binding to a native HTML element](web/basics/binding_to_a_native_html_element/)
+_ [Binding to a style](web/basics/binding_to_a_style/)
+_ [Using 'bind' to create a single template instance](web/basics/using_bind_to_create_a_single_template_instance/)
+_ [Finding Shadow DOM elements](web/basics/finding_shadow_dom_elements/)
+_ [Using a computed property](web/basics/using_a_computed_property/)
+_ [Creating a one_time binding](web/basics/creating_a_one_time_binding/)
 
 ### Control flow
 
-- [Conditionally hiding an element](web/control-flow/conditionally-hiding-an-element/)
-- [Getting the iteration index when looping over a collection](web/control-flow/getting-the-iteration-index-when-looping-over-a-collection/)
-- [Looping over a collection using iterative templates](web/control-flow/looping-over-a-collection-using-iterative-templates/)
-- [Using conditional templates](web/control-flow/using-conditional-templates/)
-- [Using template repeat with a table row or an option](web/control-flow/using-template-repeat-with-a-tr-or-an-option/)
+_ [Conditionally hiding an element](web/control_flow/conditionally_hiding_an_element/)
+_ [Getting the iteration index when looping over a collection](web/control_flow/getting_the_iteration_index_when_looping_over_a_collection/)
+_ [Looping over a collection using iterative templates](web/control_flow/looping_over_a_collection_using_iterative_templates/)
+_ [Using conditional templates](web/control_flow/using_conditional_templates/)
+_ [Using template repeat with a table row or an option](web/control_flow/using_template_repeat_with_a_tr_or_an_option/)
 
 ### Insertion points
 
-- [Creating an insertion point using the content tag](web/insertion-points/creating-an-insertion-point-using-the-content-tag/)
-- [Creating insertions using the select attribute](web/creating-insertion-points-using-the-select-attribute/)
+_ [Creating an insertion point using the content tag](web/insertion_points/creating_an_insertion_point_using_the_content_tag/)
+_ [Creating insertions using the select attribute](web/creating_insertion_points_using_the_select_attribute/)
 
 ### Forms
 
-- [Binding to a text input](web/forms/binding-to-a-text-input/)
+_ [Binding to a text input](web/forms/binding_to_a_text_input/)
