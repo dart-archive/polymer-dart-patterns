@@ -4,11 +4,9 @@ import 'package:polymer/polymer.dart';
 
 @CustomTag('my-element')
 class MyElement extends PolymerElement {
-  @observable List<String> theNodes;
+  final List<String> theNodes = toObservable([]);
 
-  MyElement.created() : super.created() {
-    theNodes = toObservable([]);
-  }
+  MyElement.created() : super.created();
 
   void showDistributedNodes() {
     getNodes(this.$['crucial'].getDistributedNodes());
@@ -19,7 +17,7 @@ class MyElement extends PolymerElement {
   }
 
   getNodes(_nodes) {
-    theNodes = [];
+    theNodes.clear();
     for (var i = 0; i < _nodes.length; i++) {
       String html = _nodes[i].outerHtml;
       if (html != null && html.trim().isNotEmpty) {

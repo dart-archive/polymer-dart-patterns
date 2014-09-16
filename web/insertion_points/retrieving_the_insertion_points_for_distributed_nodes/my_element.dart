@@ -6,18 +6,14 @@ import 'package:polymer/polymer.dart';
 
 @CustomTag('my-element')
 class MyElement extends PolymerElement {
-  @observable List<String> nodesAndEntryPoints = toObservable([]);
+  final List<String> nodesAndEntryPoints = toObservable([]);
 
   MyElement.created() : super.created();
 
   void showNodesAndEntryPoints() {
-    nodesAndEntryPoints = [];
-    for (var i = 0; i < this.children.length; i++) {
-      nodesAndEntryPoints.add(
-          this.children[i].outerHtml +
-          ' ------> ' +
-          (this.children[i].getDestinationInsertionPoints()[0] as Element).outerHtml
-      );
-    }
+    nodesAndEntryPoints.clear();
+    nodesAndEntryPoints.addAll(this.children.map((child) =>
+    '${child.outerHtml} ------> '
+    '${(child.getDestinationInsertionPoints()[0] as Element).outerHtml}'));
   }
 }
