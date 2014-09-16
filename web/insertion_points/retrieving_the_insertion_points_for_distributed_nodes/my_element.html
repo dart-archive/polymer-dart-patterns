@@ -1,0 +1,15 @@
+<link rel="import" href="packages/polymer/polymer.html">
+
+<polymer-element name="my-element">
+  <template>
+    <content select=".crucial"></content>
+    <content select=".ordinary"></content>
+    <button on-tap="{{showNodesAndEntryPoints}}">
+      Show nodes and entry points
+    </button>
+    <template repeat="{{el in nodesAndEntryPoints}}">
+      <div>{{el}}</div>
+    </template>
+  </template>
+  <script type="application/dart" src="my_element.dart"></script>
+</polymer-element>
