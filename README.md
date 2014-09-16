@@ -62,8 +62,10 @@ that it runs in both JS and Dartium without errors or warnings.
 
 ### Insertion points
 
-- [Creating an insertion point using the content tag](web/insertion_points/creating_an_insertion_point_using_the_content_tag)
-- [Creating insertions using the select attribute](web/insertion_points/creating_insertion_points_using_the_select_attribute)
+- [Creating an insertion point using the content tag](web/insertion_points/creating_an_insertion_point_using_the_content_tag/)
+- [Creating insertions using the select attribute](web/insertion_points/creating_insertion_points_using_the_select_attribute/)
+- [Accessing the DOM inside a content tag](web/insertion_points/accessing_the_dom_inside_a_content_tag/)
+- [Retrieving the insertion points for distributed nodes](web/insertion_points/retrieving_the_insertion_points_for_distributed_nodes/)
 
 ### Forms
 
