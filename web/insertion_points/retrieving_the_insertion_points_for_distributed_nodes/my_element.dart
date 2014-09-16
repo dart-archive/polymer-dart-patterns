@@ -13,7 +13,7 @@ class MyElement extends PolymerElement {
   void showNodesAndEntryPoints() {
     nodesAndEntryPoints.clear();
     nodesAndEntryPoints.addAll(this.children.map((child) =>
-    '${child.outerHtml} ------> '
-    '${(child.getDestinationInsertionPoints()[0] as Element).outerHtml}'));
+        '${child.outerHtml} ------> '
+        '${(child.getDestinationInsertionPoints()[0] as Element).outerHtml}'));
   }
 }
