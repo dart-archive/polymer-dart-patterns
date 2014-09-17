@@ -6,12 +6,12 @@ property values.
 
 ## The code
 
-* [`my_element.dart`](https://github.com/dart-lang/polymer-dart-snippets/blob/master/web/basics/using_a_computed_property/my_element.dart): 
-  The HTML for `<my-element>`.
-* [`my_element.html`](https://github.com/dart-lang/polymer-dart-snippets/blob/master/web/basics/using_a_computed_property/my_element.html): 
-  The Dart code for `<my-element>`.
-* [`index.html`](https://github.com/dart-lang/polymer-dart-snippets/blob/computed-property-readme/web/basics/using_a_computed_property/index.html):
-  The HTML file that imports `<my-element>`.
+* [my_element.dart](https://github.com/dart-lang/polymer-dart-snippets/blob/master/web/basics/using_a_computed_property/my_element.dart): 
+  The HTML for `<my-element>`
+* [my_element.html](https://github.com/dart-lang/polymer-dart-snippets/blob/master/web/basics/using_a_computed_property/my_element.html): 
+  The Dart code for `<my-element>`
+* [index.html](https://github.com/dart-lang/polymer-dart-snippets/blob/computed-property-readme/web/basics/using_a_computed_property/index.html):
+  The HTML file that imports `<my-element>`
 
 ## How it works
 
@@ -37,10 +37,9 @@ as a getter function.
     @ComputedProperty('firstName + " " + lastName')
     String get fullName => readValue(#fullName);
 
-The template code ([`my_element.html`](https://github.com/dart-lang/polymer-dart-snippets/blob/master/web/basics/using_a_computed_property/my_element.html))
-uses _binding_ notation, `{{varName}}`, to dynamically bind the named HTML
-object to the Dart variable of the same name.  When either value changes,
-both values update.
+The template code (`my_element.html`) uses _binding_ notation,
+`{{varName}}`, to dynamically bind the named HTML object to the Dart
+variable of the same name.  When either value changes, both values update.
 
 ## More information
 
