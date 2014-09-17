@@ -15,7 +15,7 @@ property values.
 
 ## How it works
 
-The `MyElement` class (`my_element.dart`) defines three properties:
+The MyElement class (`my_element.dart`) defines three properties:
 
 * `firstName`
 * `lastName`
@@ -37,8 +37,8 @@ as a getter function.
     @ComputedProperty('firstName + " " + lastName')
     String get fullName => readValue(#fullName);
 
-The template code (`my_element.html`) uses _binding_ notation,
-`{{varName}}`, to dynamically bind the named HTML object to the Dart
+The template code (`my_element.html`) uses _binding_ notation
+(`{{fullName}}`) to dynamically bind the named HTML object to the Dart
 variable of the same name.  When either value changes, both values update.
 
 ## More information
