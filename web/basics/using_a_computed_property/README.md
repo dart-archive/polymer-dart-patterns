@@ -37,7 +37,8 @@ The template code ([`my_element.html`](https://github.com/dart-lang/polymer-dart
 
 ## More information
 
-* [using-a-computed-property.html](https://github.com/PolymerLabs/polymer-snippets/blob/f5651613ea5db9c2e50a2f4df8f27c64c07755db/snippets/basics/using-a-computed-property.html): The JavaScript version of this example.
+* [using-a-computed-property.html](https://github.com/PolymerLabs/polymer-snippets/blob/f5651613ea5db9c2e50a2f4df8f27c64c07755db/snippets/basics/using-a-computed-property.html):
+  The JavaScript version of this example.
 * [@ComputedProperty](https://www.dartlang.org/polymer/reference/release-notes/#computedproperty): A section in The Polymer Dart release notes.
 * [ComputedProperty class](http://www.dartdocs.org/documentation/polymer/0.12.0/index.html#polymer/polymer.ComputedProperty): API documentation.
 
