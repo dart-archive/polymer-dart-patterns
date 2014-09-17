@@ -7,11 +7,11 @@ property values.
 ## The code
 
 * [my_element.dart](https://github.com/dart-lang/polymer-dart-snippets/blob/master/web/basics/using_a_computed_property/my_element.dart): 
-  The HTML for `<my-element>`
-* [my_element.html](https://github.com/dart-lang/polymer-dart-snippets/blob/master/web/basics/using_a_computed_property/my_element.html): 
   The Dart code for `<my-element>`
+* [my_element.html](https://github.com/dart-lang/polymer-dart-snippets/blob/master/web/basics/using_a_computed_property/my_element.html): 
+  The HTML code for `<my-element>`
 * [index.html](https://github.com/dart-lang/polymer-dart-snippets/blob/computed-property-readme/web/basics/using_a_computed_property/index.html):
-  The HTML file that imports `<my-element>`
+  An HTML file that uses `<my-element>`
 
 ## How it works
 
