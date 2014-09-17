@@ -14,15 +14,19 @@ transformers:
         web/basics/using_bind_to_create_a_single_template_instance/index.html,
         web/basics/creating_a_one_time_binding/index.html,
         web/basics/binding_to_a_computed_property_using_a_getter/index.html,
+
         web/control-flow/conditionally_hiding_an_element/index.html,
         web/control-flow/getting_the_iteration_index_when_looping_over_a_collection/index.html,
         web/control-flow/looping_over_a_collection_using_iterative_templates/index.html,
         web/control-flow/using_conditional_templates/index.html,
         web/control-flow/using_template_repeat_with_a_table_row_or_an_option/index.html,
+
         web/insertion_points/creating_an_insertion_point_using_the_control_tag/index.html,
         web/insertion_points/creating_insertion_points_using_the_select_attribute/index.html,
         web/insertion_points/accessing_the_dom_inside_a_content_tag/index.html,
         web/insertion_points/retrieving_the_insertion_points_for_distributed_nodes/index.html,
+
+        web/forms/binding_a_boolean_field_to_a_checkbox/index.html,
         web/forms/binding_to_a_text_input/index.html]
 environment:
   sdk: ">=1.2.0 <2.0.0"

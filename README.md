@@ -69,4 +69,5 @@ that it runs in both JS and Dartium without errors or warnings.
 
 ### Forms
 
+- [Binding a boolean field to a checkbox](web/forms/binding_a_boolean_field_to_a_checkbox/)
 - [Binding to a text input](web/forms/binding_to_a_text_input/)
