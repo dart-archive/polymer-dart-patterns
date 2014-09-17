@@ -1,4 +1,4 @@
-library web.insertion_points.retrieving_the_insertion_points_for_distributed_nodes;
+library web.observing_changes.observing_changes_to_element_fields;
 
 import 'dart:html' show Event, Node;
 

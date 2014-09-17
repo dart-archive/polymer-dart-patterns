@@ -67,6 +67,10 @@ that it runs in both JS and Dartium without errors or warnings.
 - [Accessing the DOM inside a content tag](web/insertion_points/accessing_the_dom_inside_a_content_tag/)
 - [Retrieving the insertion points for distributed nodes](web/insertion_points/retrieving_the_insertion_points_for_distributed_nodes/)
 
+### Observing changes
+
+- [Observing changes to element fields](web/observing_changes/observing_changes_to_element_fields/)
+
 ### Forms
 
 - [Binding to a text input](web/forms/binding_to_a_text_input/)
