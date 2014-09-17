@@ -1,10 +1,5 @@
----
-layout: default
-title: "Using a Computed Property"
-description: xxx
----
 
-# {{ page.title }}
+# Using a Computed Property
 
 This example shows how to to bind to a property
 that is computed based on other property values.
@@ -52,15 +47,8 @@ same name.  When either value changes, both values are updated.
 
 ## More information
 
-[using-a-computed-property.html](https://github.com/PolymerLabs/polymer-snippets/blob/f5651613ea5db9c2e50a2f4df8f27c64c07755db/snippets/basics/using-a-computed-property.html)
-: The JavaScript version of this example.
-
-[@ComputedProperty](https://www.dartlang.org/polymer/reference/release-notes/#computedproperty)
-: A section in The Polymer Dart release notes.
-
-[ComputedProperty class](http://www.dartdocs.org/documentation/polymer/0.12.0/index.html#polymer/polymer.ComputedProperty)
-: API documentation.
-
-[Define a Custom Element tutorial](https://www.dartlang.org/docs/tutorials/polymer-intro/)
-: Create a custom HTML element using Polymer.
+* [using-a-computed-property.html](https://github.com/PolymerLabs/polymer-snippets/blob/f5651613ea5db9c2e50a2f4df8f27c64c07755db/snippets/basics/using-a-computed-property.html): The JavaScript version of this example.
+* [@ComputedProperty](https://www.dartlang.org/polymer/reference/release-notes/#computedproperty): A section in The Polymer Dart release notes.
+* [ComputedProperty class](http://www.dartdocs.org/documentation/polymer/0.12.0/index.html#polymer/polymer.ComputedProperty): API documentation.
+* [Define a Custom Element tutorial](https://www.dartlang.org/docs/tutorials/polymer-intro/): Create a custom HTML element using Polymer.
 
