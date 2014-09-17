@@ -1,5 +1,5 @@
 
-# Using a Computed Property
+# Using a computed property
 
 Shows how to to bind to a property that is computed based on other property values.
 
@@ -28,7 +28,7 @@ The expression is used to compute the value of the property. For example:
 
     @ComputedProperty('firstName + " " + lastName')
 
-Apply this annotation to the varible to be computed, which is also defined as a getter function.
+Apply this annotation to the variable to be computed, which is also defined as a getter function.
 
     @ComputedProperty('firstName + " " + lastName')
     String get fullName => readValue(#fullName);
