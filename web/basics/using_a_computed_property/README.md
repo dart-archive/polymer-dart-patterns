@@ -46,7 +46,7 @@ variable of the same name.  When either value changes, both values update.
 * [using-a-computed-property.html](https://github.com/PolymerLabs/polymer-snippets/blob/f5651613ea5db9c2e50a2f4df8f27c64c07755db/snippets/basics/using-a-computed-property.html):
   The JavaScript version of this example
 * [@ComputedProperty](https://www.dartlang.org/polymer/reference/release-notes/#computedproperty):
-  A section in The polymer.dart release notes
+  A section in the polymer.dart release notes
 * [ComputedProperty class](http://www.dartdocs.org/documentation/polymer/0.12.0/index.html#polymer/polymer.ComputedProperty):
   API documentation
 
