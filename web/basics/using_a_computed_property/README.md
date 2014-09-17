@@ -22,7 +22,7 @@ The `MyElement` class (`my_element.dart`) defines three properties:
 
 The `fullName` property is _computed_ from `firstName` and `lastName`, which must be defined using the `@observable` annotation. A computed property, defined using the `@ComputedProperty` annotation, has the form:
 
-    @ComputedProperty(_expression_)
+    @ComputedProperty(expression)
 
 The expression is used to compute the value of the property. For example:
 
