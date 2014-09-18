@@ -29,6 +29,8 @@ transformers:
         web/observing_changes/observing_changes_to_element_fields/index.html,
 
         web/forms/binding_a_boolean_field_to_a_checkbox/index.html,
-        web/forms/binding_to_a_text_input/index.html]
+        web/forms/binding_to_a_text_input/index.html,
+        web/forms/binding_to_a_textarea/index.html,
+        web/forms/implementing_simple_validation/index.html]
 environment:
   sdk: ">=1.2.0 <2.0.0"
