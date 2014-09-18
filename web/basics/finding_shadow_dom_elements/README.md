@@ -20,7 +20,7 @@ are encapsulated&mdash;they are not stored in the main document DOM tree.
 
 Like the DOM, the shadow DOM is organized as a tree of nodes.
 If a node has been tagged with an `id` attribute, you can find
-it using the `$['myDiv']' syntax. This Polymer feature, called
+it using the `$['myDiv']` syntax. This Polymer feature, called
 _automatic node finding_, returns a reference to the named element.
 
 The MyElement class (`my_element.dart`) defines the `findNodes` method.
