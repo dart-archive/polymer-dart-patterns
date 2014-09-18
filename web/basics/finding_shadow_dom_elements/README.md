@@ -16,7 +16,7 @@ Shows how to find elements inside the shadow DOM.
 
 The [Shadow DOM](http://robdodson.me/blog/2013/08/26/shadow-dom-introduction/)
 allows web designers to create UI widgets where the implementation details
-are encapsulated&mdash;they are not stored in the main document DOM tree. 
+are encapsulated&mdash;they are not stored in the main document DOM. 
 
 Like the DOM, the shadow DOM is organized as a tree of nodes.
 If a node has been tagged with an `id` attribute, you can find
@@ -40,11 +40,11 @@ includes a button.
       <button on-tap="{{findNodes}}">Find nodes</button>
     </div>
 
-When the button is tapped, the `findNode` method is run,
-and the paragraph is updated.
+When the button is tapped, the `findNode` method runs,
+and the paragraph updates.
 
 ## More information
 
-* [using-a-computed-property.html](https://github.com/PolymerLabs/polymer-snippets/blob/f5651613ea5db9c2e50a2f4df8f27c64c07755db/snippets/basics/finding-shadow-dom-elements.html):
+* [finding-shadow-dom-elements.html](https://github.com/PolymerLabs/polymer-snippets/blob/f5651613ea5db9c2e50a2f4df8f27c64c07755db/snippets/basics/finding-shadow-dom-elements.html):
   The JavaScript version of this example
 
