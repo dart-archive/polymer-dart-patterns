@@ -77,3 +77,13 @@ that it runs in both JS and Dartium without errors or warnings.
 - [Binding to a text input](web/forms/binding_to_a_text_input/)
 - [Binding to a textarea](web/forms/binding_to_a_textarea/)
 - [Implementing simple validation](web/forms/implementing_simple_validation/)
+
+### Styling elements
+
+- [Applying styles by piercing Shadow DOM boundaries](web/styling_elements/applying_styles_by_piercing_shadow_dom_boundaries/)
+- [Defining styles inside a Polymer element](web/styling_elements/defining_styles_inside_a_polymer_element/)
+- [Programatically changing the styles of an element](web/styling_elements/programmatically_changing_the_styles_of_an_element/)
+- [Styling distributed nodes](web/styling_elements/styling_distributed_nodes/)
+- [Using host-context to theme an element](web/styling_elements/using_host_context_to_theme_an_element/)
+- [Using :host with a CSS selector](web/styling_elements/using_host_with_a_css_selector/)
+- [Using :host with pseudo classes](web/styling_elements/using_host_with_pseudo_classes/)

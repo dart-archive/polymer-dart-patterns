@@ -1,7 +1,7 @@
 name: polymer_dart_samples
 description: Port of https://github.com/PolymerLabs/polymer-snippets
 dependencies:
-  polymer: ">=0.13.0 <0.14.0"
+  polymer: ">=0.14.0 <0.15.0"
 transformers:
 - polymer:
     entry_points:
@@ -13,7 +13,7 @@ transformers:
       - web/basics/finding_shadow_dom_elements/index.html
       - web/basics/using_bind_to_create_a_single_template_instance/index.html
       - web/basics/creating_a_one_time_binding/index.html
-      - web/basics/binding_to_a_computed_property_using_a_getter/index.html
+      - web/basics/using_a_computed_property/index.html
 
       - web/control_flow/conditionally_hiding_an_element/index.html
       - web/control_flow/getting_the_iteration_index_when_looping_over_a_collection/index.html
@@ -32,5 +32,13 @@ transformers:
       - web/forms/binding_to_a_text_input/index.html
       - web/forms/binding_to_a_textarea/index.html
       - web/forms/implementing_simple_validation/index.html
+
+      - web/styling_elements/applying_styles_by_piercing_shadow_dom_boundaries/index.html
+      - web/styling_elements/defining_styles_inside_a_polymer_element/index.html
+      - web/styling_elements/programmatically_changing_the_styles_of_an_element/index.html
+      - web/styling_elements/styling_distributed_nodes/index.html
+      - web/styling_elements/using_host_context_to_theme_an_element/index.html
+      - web/styling_elements/using_host_with_a_css_selector/index.html
+      - web/styling_elements/using_host_with_pseudo_classes/index.html
 environment:
   sdk: ">=1.2.0 <2.0.0"

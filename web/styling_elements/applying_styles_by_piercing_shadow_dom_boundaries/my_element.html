@@ -1,0 +1,16 @@
+<link rel="import" href="packages/polymer/polymer.html">
+<link rel="import" href="child_element.html">
+
+<polymer-element name="my-element" noscript>
+  <template>
+    <style>
+      :host {
+        display: block;
+        border: 1px solid black;
+      }
+    </style>
+    <h2>Heading inside my-element</h2>
+    <p>Para inside my-element</p>
+    <child-element></child-element>
+  </template>
+</polymer-element>
