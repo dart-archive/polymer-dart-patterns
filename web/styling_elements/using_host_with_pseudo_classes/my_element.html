@@ -1,0 +1,16 @@
+<link rel="import" href="packages/polymer/polymer.html">
+
+<polymer-element name="my-element" noscript>
+  <template>
+    <style>
+      :host {
+        /* Note: by default elements are always display:inline. */
+        display: block;
+      }
+      :host(:hover) {
+        opacity: 0.5;
+      }
+    </style>
+    <p>Hover over me</p>
+  </template>
+</polymer-element>

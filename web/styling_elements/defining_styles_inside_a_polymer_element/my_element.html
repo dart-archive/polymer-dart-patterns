@@ -1,0 +1,20 @@
+<link rel="import" href="packages/polymer/polymer.html">
+
+<polymer-element name="my-element" noscript>
+  <template>
+    <style>
+      :host {
+        /* Note: by default elements are always display:inline. */
+        display: block;
+        color: blue;
+      }
+      /* Does not apply to distributed nodes. */
+      p {
+        color: red;
+      }
+    </style>
+    <h2>Blue heading</h2>
+    <p>Red para inside element</p>
+    <content></content>
+  </template>
+</polymer-element>
