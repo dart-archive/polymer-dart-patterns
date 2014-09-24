@@ -10,11 +10,11 @@ class Item {
 
 @CustomTag('my-element')
 class MyElement extends PolymerElement {
-  final List<Item> items = toObservable([
+  final List<Item> items = [
     new Item('red', false),
     new Item('green', true),
     new Item('blue', false)
-  ]);
+  ];
 
   @observable List<String> selectedColors = toObservable([]);
 

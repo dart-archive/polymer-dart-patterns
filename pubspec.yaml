@@ -3,7 +3,7 @@ description: Port of https://github.com/PolymerLabs/polymer-snippets
 environment:
   sdk: '>=1.2.0 <2.0.0'
 dependencies:
-  polymer: '>=0.13.0 <0.14.0'
+  polymer: '>=0.14.0 <0.15.0'
 transformers:
 - polymer:
     entry_points:

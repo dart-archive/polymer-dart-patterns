@@ -6,7 +6,7 @@ import 'package:polymer/polymer.dart';
 
 @CustomTag('my-element')
 class MyElement extends PolymerElement {
-  final List<String> colors = toObservable(['red', 'green', 'blue']);
+  final List<String> colors = ['red', 'green', 'blue'];
   @observable String selectedColor = '';
 
   MyElement.created() : super.created();
