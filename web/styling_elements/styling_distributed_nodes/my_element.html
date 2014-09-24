@@ -1,0 +1,18 @@
+<link rel="import" href="packages/polymer/polymer.html">
+
+<polymer-element name="my-element" noscript>
+  <template>
+    <style>
+      ::content p {
+        color: red;
+      }
+
+      ::content .blue {
+        color: blue;
+      }
+    </style>
+    <content select=".blue"></content>
+    <p>Inside my-element</p>
+    <content></content>
+  </template>
+</polymer-element>
