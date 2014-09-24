@@ -40,5 +40,9 @@ transformers:
       - web/styling_elements/using_host_context_to_theme_an_element/index.html
       - web/styling_elements/using_host_with_a_css_selector/index.html
       - web/styling_elements/using_host_with_pseudo_classes/index.html
+
+      - web/layout_attributes/nesting_flex_layouts/index.html
+      - web/layout_attributes/using_flex/index.html
+      - web/layout_attributes/using_layout_attributes/index.html
 environment:
   sdk: ">=1.2.0 <2.0.0"

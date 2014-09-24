@@ -1,0 +1,26 @@
+<link rel="import" href="packages/polymer/polymer.html">
+
+<polymer-element name="my-element" noscript layout vertical>
+  <template>
+    <style>
+      div {
+        background: lightgreen;
+        border: 1px dotted white;
+      }
+    </style>
+    <div layout horizontal id="header">
+      <div>Menu1</div>
+      <div flex>Menu2</div>
+      <div>Menu3</div>
+    </div>
+    <div flex layout horizontal id="main">
+      <div flex layout vertical>
+        <div>Section 1</div>
+        <div>Section 2</div>
+        <div>Section 3</div>
+      </div>
+      <div flex>Col</div>
+    </div>
+    <div id="footer">Footer</div>
+  </template>
+</polymer-element>

@@ -87,3 +87,10 @@ that it runs in both JS and Dartium without errors or warnings.
 - [Using host-context to theme an element](web/styling_elements/using_host_context_to_theme_an_element/)
 - [Using :host with a CSS selector](web/styling_elements/using_host_with_a_css_selector/)
 - [Using :host with pseudo classes](web/styling_elements/using_host_with_pseudo_classes/)
+
+### Layout attributes
+
+- [Using layout attributes](web/layout_attributes/using_layout_attributes/)
+- [Using flex](web/layout_attributes/using_flex/)
+- [Nesting flex layouts](web/layout_attributes/nesting_flex_layouts/)
+
