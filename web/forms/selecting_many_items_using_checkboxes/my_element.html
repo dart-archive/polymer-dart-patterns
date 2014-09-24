@@ -1,0 +1,20 @@
+<link rel="import" href="packages/polymer/polymer.html">
+
+<polymer-element name="my-element">
+  <template>
+    <div on-change="{{updateSelectedColors}}">
+      <template repeat="{{item in items}}">
+        <label>{{item.color}}
+          <input type="checkbox"
+                 value="{{item.color}}"
+                 checked="{{item.checked}}">
+        </label>
+      </template>
+    </div>
+    <hr>
+    <template repeat="{{color in selectedColors}}">
+      <div>{{color}}</div>
+    </template>
+  </template>
+  <script type="application/dart" src="my_element.dart"></script>
+</polymer-element>
