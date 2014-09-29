@@ -70,6 +70,8 @@ that it runs in both JS and Dartium without errors or warnings.
 ### Observing changes
 
 - [Observing changes to element fields](web/observing_changes/observing_changes_to_element_fields/)
+- [Observing changes to light DOM children](web/observing_changes/observing_changes_to_light_dom_children/)
+- [Watching for changes to a nested objects](web/observing_changes/watching_for_changes_to_a_nested_object/)
 
 ### Forms
 
