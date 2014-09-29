@@ -28,6 +28,9 @@ transformers:
       - web/insertion_points/accessing_the_dom_inside_a_content_tag/index.html
       - web/insertion_points/retrieving_the_insertion_points_for_distributed_nodes/index.html
 
+      - web/inheritance/extending_a_polymer_element/index.html
+      - web/inheritance/overriding_an_inherited_method/index.html
+
       - web/observing_changes/observing_changes_to_element_fields/index.html
 
       - web/forms/binding_a_boolean_field_to_a_checkbox/index.html
