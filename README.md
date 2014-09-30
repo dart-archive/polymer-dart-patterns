@@ -103,3 +103,16 @@ that it runs in both JS and Dartium without errors or warnings.
 - [Using layout attributes](web/layout_attributes/using_layout_attributes/)
 - [Using flex](web/layout_attributes/using_flex/)
 - [Nesting flex layouts](web/layout_attributes/nesting_flex_layouts/)
+
+### Core elements
+
+Samples using
+[Polymer core elements](http://www.polymer-project.org/docs/elements/core-elements.html).
+
+#### Core toolbar
+
+[Using core-toolbar](web/core_elements/core_toolbar/using_core_toolbar/)
+[Adding a menu button](web/core_elements/core_toolbar/adding_a_menu_button/)
+[Adding button rows](web/core_elements/core_toolbar/adding_button_rows/)
+[Changing toolbar size](web/core_elements/changing_the_toolbar_size/)
+
