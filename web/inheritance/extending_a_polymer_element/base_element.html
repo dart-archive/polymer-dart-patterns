@@ -1,9 +1,8 @@
 <link rel="import" href="packages/polymer/polymer.html">
 
-<polymer-element name="extendee-element" attributes="message">
+<polymer-element name="base-element">
   <template>
-    <div>{{message}}</div>
-    <button on-tap="{{setMessage}}">Show Message</button>
+    <div>My favorite color is {{color}}.</div>
   </template>
   <script type="application/dart" src="elements.dart"></script>
 </polymer-element>

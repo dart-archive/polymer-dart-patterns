@@ -2,15 +2,15 @@ library web.inheritance.extending_a_polymer_element.elements;
 
 import 'package:polymer/polymer.dart';
 
-@CustomTag('extendee-element')
-class ExtendeeElement extends PolymerElement {
+@CustomTag('base-element')
+class BaseElement extends PolymerElement {
   @observable String color = "red";
-  ExtendeeElement.created() : super.created();
+  BaseElement.created() : super.created();
 }
 
-@CustomTag('extender-element')
-class ExtenderElement extends ExtendeeElement {
+@CustomTag('sub-element')
+class SubElement extends BaseElement {
   @observable String color = "green";
   @observable String name = "Jacob";
-  ExtenderElement.created() : super.created();
+  SubElement.created() : super.created();
 }
