@@ -12,6 +12,7 @@ transformers:
       - web/basics/binding_to_a_map/index.html
       - web/basics/binding_to_a_native_html_element/index.html
       - web/basics/binding_to_a_style/index.html
+      - web/basics/dynamically_adding_a_polymer_element_to_the_dom/index.html
       - web/basics/finding_shadow_dom_elements/index.html
       - web/basics/using_bind_to_create_a_single_template_instance/index.html
       - web/basics/creating_a_one_time_binding/index.html

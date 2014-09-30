@@ -48,6 +48,7 @@ that it runs in both JS and Dartium without errors or warnings.
 - [Binding to a native HTML element](web/basics/binding_to_a_native_html_element/)
 - [Binding to a style](web/basics/binding_to_a_style/)
 - [Using 'bind' to create a single template instance](web/basics/using_bind_to_create_a_single_template_instance/)
+- [Dynamically adding a Polymer element to the DOM](web/basics/dynamically_adding_a_polymer_element_to_the_dom/)
 - [Finding Shadow DOM elements](web/basics/finding_shadow_dom_elements/)
 - [Using a computed property](web/basics/using_a_computed_property/)
 - [Creating a one_time binding](web/basics/creating_a_one_time_binding/)
@@ -93,4 +94,3 @@ that it runs in both JS and Dartium without errors or warnings.
 - [Using layout attributes](web/layout_attributes/using_layout_attributes/)
 - [Using flex](web/layout_attributes/using_flex/)
 - [Nesting flex layouts](web/layout_attributes/nesting_flex_layouts/)
-
