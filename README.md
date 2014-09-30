@@ -87,6 +87,9 @@ that it runs in both JS and Dartium without errors or warnings.
 - [Selecting many items using checkboxes](web/forms/selecting_many_items_using_checkboxes/)
 - [Implementing simple validation](web/forms/implementing_simple_validation/)
 
+### Events
+
+- [Using custom events](web/events/using_custom_events//)
 
 ### Styling elements
 
