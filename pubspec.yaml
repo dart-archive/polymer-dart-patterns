@@ -32,6 +32,8 @@ transformers:
       - web/inheritance/overriding_an_inherited_method/index.html
 
       - web/observing_changes/observing_changes_to_element_fields/index.html
+      - web/observing_changes/observing_changes_to_light_dom_children/index.html
+      - web/observing_changes/watching_for_changes_to_a_nested_object/index.html
 
       - web/forms/binding_a_boolean_field_to_a_checkbox/index.html
       - web/forms/binding_to_a_text_input/index.html
