@@ -1,0 +1,9 @@
+<link rel="import" href="packages/polymer/polymer.html">
+
+<polymer-element name="child-element">
+<template>
+    <input id="myInput" type="text" placeholder="Write something">
+    <button on-tap="{{fireEvent}}">Fire custom event</button>
+  </template>
+  <script type="application/dart" src="elements.dart"></script>
+</polymer-element>
