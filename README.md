@@ -83,7 +83,10 @@ that it runs in both JS and Dartium without errors or warnings.
 - [Binding a boolean field to a checkbox](web/forms/binding_a_boolean_field_to_a_checkbox/)
 - [Binding to a text input](web/forms/binding_to_a_text_input/)
 - [Binding to a textarea](web/forms/binding_to_a_textarea/)
+- [Selecting one item using radio buttons](web/forms/selecting_one_item_using_radio_buttons/)
+- [Selecting many items using checkboxes](web/forms/selecting_many_items_using_checkboxes/)
 - [Implementing simple validation](web/forms/implementing_simple_validation/)
+
 
 ### Styling elements
 
