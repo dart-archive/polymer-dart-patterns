@@ -1,0 +1,12 @@
+<link rel="import" href="packages/polymer/polymer.html">
+<link rel="import" href="child_element.html">
+
+<polymer-element name="parent-element">
+  <template>
+    <div on-spoken="{{heard}}">
+      <child-element></child-element>
+      <div>{{message}}</div>
+    </div>
+  </template>
+  <script type="application/dart" src="elements.dart"></script>
+</polymer-element>

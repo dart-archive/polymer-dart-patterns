@@ -61,6 +61,11 @@ that it runs in both JS and Dartium without errors or warnings.
 - [Using conditional templates](web/control_flow/using_conditional_templates/)
 - [Using template repeat with a table row or an option](web/control_flow/using_template_repeat_with_a_table_row_or_an_option/)
 
+### Inheritance
+
+- [Extending a Polymer element](web/inheritance/extending_a_polymer_element/)
+- [Overriding an inherited method](web/inheritance/overriding_an_inherited_method/)
+
 ### Insertion points
 
 - [Creating an insertion point using the content tag](web/insertion_points/creating_an_insertion_point_using_the_content_tag/)
@@ -71,13 +76,21 @@ that it runs in both JS and Dartium without errors or warnings.
 ### Observing changes
 
 - [Observing changes to element fields](web/observing_changes/observing_changes_to_element_fields/)
+- [Observing changes to light DOM children](web/observing_changes/observing_changes_to_light_dom_children/)
+- [Watching for changes to a nested objects](web/observing_changes/watching_for_changes_to_a_nested_object/)
 
 ### Forms
 
 - [Binding a boolean field to a checkbox](web/forms/binding_a_boolean_field_to_a_checkbox/)
 - [Binding to a text input](web/forms/binding_to_a_text_input/)
 - [Binding to a textarea](web/forms/binding_to_a_textarea/)
+- [Selecting one item using radio buttons](web/forms/selecting_one_item_using_radio_buttons/)
+- [Selecting many items using checkboxes](web/forms/selecting_many_items_using_checkboxes/)
 - [Implementing simple validation](web/forms/implementing_simple_validation/)
+
+### Events
+
+- [Using custom events](web/events/using_custom_events//)
 
 ### Styling elements
 
@@ -94,3 +107,16 @@ that it runs in both JS and Dartium without errors or warnings.
 - [Using layout attributes](web/layout_attributes/using_layout_attributes/)
 - [Using flex](web/layout_attributes/using_flex/)
 - [Nesting flex layouts](web/layout_attributes/nesting_flex_layouts/)
+
+### Core elements
+
+Samples using
+[Polymer core elements](http://www.polymer-project.org/docs/elements/core-elements.html).
+
+#### Core toolbar
+
+- [Using core-toolbar](web/core_elements/core_toolbar/using_core_toolbar/)
+- [Adding a menu button](web/core_elements/core_toolbar/adding_a_menu_button/)
+- [Adding button rows](web/core_elements/core_toolbar/adding_button_rows/)
+- [Changing toolbar size](web/core_elements/changing_the_toolbar_size/)
+
