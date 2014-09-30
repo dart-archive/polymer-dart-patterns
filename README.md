@@ -111,8 +111,8 @@ Samples using
 
 #### Core toolbar
 
-[Using core-toolbar](web/core_elements/core_toolbar/using_core_toolbar/)
-[Adding a menu button](web/core_elements/core_toolbar/adding_a_menu_button/)
-[Adding button rows](web/core_elements/core_toolbar/adding_button_rows/)
-[Changing toolbar size](web/core_elements/changing_the_toolbar_size/)
+- [Using core-toolbar](web/core_elements/core_toolbar/using_core_toolbar/)
+- [Adding a menu button](web/core_elements/core_toolbar/adding_a_menu_button/)
+- [Adding button rows](web/core_elements/core_toolbar/adding_button_rows/)
+- [Changing toolbar size](web/core_elements/changing_the_toolbar_size/)
 
