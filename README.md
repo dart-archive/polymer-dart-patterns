@@ -60,6 +60,11 @@ that it runs in both JS and Dartium without errors or warnings.
 - [Using conditional templates](web/control_flow/using_conditional_templates/)
 - [Using template repeat with a table row or an option](web/control_flow/using_template_repeat_with_a_table_row_or_an_option/)
 
+### Inheritance
+
+- [Extending a Polymer element](web/inheritance/extending_a_polymer_element/)
+- [Overriding an inherited method](web/inheritance/overriding_an_inherited_method/)
+
 ### Insertion points
 
 - [Creating an insertion point using the content tag](web/insertion_points/creating_an_insertion_point_using_the_content_tag/)
@@ -93,4 +98,3 @@ that it runs in both JS and Dartium without errors or warnings.
 - [Using layout attributes](web/layout_attributes/using_layout_attributes/)
 - [Using flex](web/layout_attributes/using_flex/)
 - [Nesting flex layouts](web/layout_attributes/nesting_flex_layouts/)
-
