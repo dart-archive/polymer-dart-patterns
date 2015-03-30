@@ -10,12 +10,3 @@ class BaseElement extends PolymerElement {
     message = 'I like Ike';
   }
 }
-
-@CustomTag('sub-element')
-class SubElement extends BaseElement {
-  void setMessage() {
-    super.setMessage();
-    this.message += ', but I love Lucy.';
-  }
-  SubElement.created() : super.created();
-}

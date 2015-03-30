@@ -1,12 +1,7 @@
-library web.inheritance.extending_a_polymer_element.elements;
+library web.inheritance.extending_a_polymer_element.sub_element;
 
 import 'package:polymer/polymer.dart';
-
-@CustomTag('base-element')
-class BaseElement extends PolymerElement {
-  @observable String color = "red";
-  BaseElement.created() : super.created();
-}
+import 'base_element.dart';
 
 @CustomTag('sub-element')
 class SubElement extends BaseElement {
