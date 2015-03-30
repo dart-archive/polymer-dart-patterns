@@ -1,3 +1,4 @@
+@HtmlImport('my_element.html')
 library web.control_flow.conditionally_hiding_an_element;
 
 import 'package:polymer/polymer.dart';

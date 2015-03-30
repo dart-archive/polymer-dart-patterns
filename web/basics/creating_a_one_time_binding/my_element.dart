@@ -1,3 +1,4 @@
+@HtmlImport('my_element.html')
 library web.basics.creating_a_one_time_binding;
 
 import 'package:polymer/polymer.dart';

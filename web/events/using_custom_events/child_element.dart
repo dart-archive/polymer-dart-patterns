@@ -1,3 +1,4 @@
+@HtmlImport('child_element.html')
 library web.events.using_custom_events.child_element;
 
 import 'dart:html' show Event, Node;

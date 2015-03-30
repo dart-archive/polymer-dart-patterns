@@ -1,3 +1,4 @@
+@HtmlImport('my_element.html')
 library web.watching_for_changes_to_a_nested_objects;
 
 import 'dart:html';

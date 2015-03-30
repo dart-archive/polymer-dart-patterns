@@ -1,3 +1,4 @@
+@HtmlImport('my_element.html')
 library web.insertion_points.accessing_the_dom_inside_a_content_tag;
 
 import 'package:polymer/polymer.dart';

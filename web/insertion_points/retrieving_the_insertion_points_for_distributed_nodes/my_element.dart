@@ -1,3 +1,4 @@
+@HtmlImport('my_element.html')
 library web.insertion_points.retrieving_the_insertion_points_for_distributed_nodes;
 
 import 'dart:html' show Element;

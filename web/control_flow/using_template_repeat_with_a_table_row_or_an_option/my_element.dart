@@ -1,3 +1,4 @@
+@HtmlImport('my_element.html')
 library web.control_flow.using_template_repeat_with_a_table_row_or_an_option;
 
 import 'package:polymer/polymer.dart';

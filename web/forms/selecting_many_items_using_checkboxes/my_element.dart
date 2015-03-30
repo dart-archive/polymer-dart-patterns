@@ -1,3 +1,4 @@
+@HtmlImport('my_element.html')
 library web.forms.selecting_many_elements_using_checkboxes;
 
 import 'package:polymer/polymer.dart';

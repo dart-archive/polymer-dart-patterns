@@ -1,3 +1,4 @@
+@HtmlImport('my_element.html')
 library web.observing_changes.observing_changes_to_light_dom_children;
 
 import 'dart:html';

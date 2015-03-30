@@ -1,3 +1,4 @@
+@HtmlImport('my_element.html')
 library web.forms.selecting_one_item_using_radio_buttons;
 
 import 'dart:html' show Event, InputElement, Node;

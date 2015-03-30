@@ -1,3 +1,4 @@
+@HtmlImport('my_element.html')
 library web.basics.finding_shadow_dom_elements;
 
 import 'package:polymer/polymer.dart';
