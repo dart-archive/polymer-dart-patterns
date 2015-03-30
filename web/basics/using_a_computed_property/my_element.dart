@@ -1,3 +1,4 @@
+@HtmlImport('my_element.html')
 library web.basics.using_a_computed_property;
 
 import 'package:polymer/polymer.dart';

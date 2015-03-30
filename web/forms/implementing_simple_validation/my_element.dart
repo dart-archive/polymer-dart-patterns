@@ -1,3 +1,4 @@
+@HtmlImport('my_element.html')
 library web.forms.implementing_simple_validation;
 
 import 'package:polymer/polymer.dart';

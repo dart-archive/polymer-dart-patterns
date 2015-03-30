@@ -1,3 +1,4 @@
+@HtmlImport('base_element.html')
 library web.inheritance.extending_a_polymer_element.base_element;
 
 import 'package:polymer/polymer.dart';

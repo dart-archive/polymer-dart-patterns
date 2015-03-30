@@ -1,3 +1,4 @@
+@HtmlImport('my_element.html')
 library web.forms.binding_to_a_textarea;
 
 import 'package:polymer/polymer.dart';

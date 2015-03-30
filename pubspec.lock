@@ -60,7 +60,7 @@ packages:
   initialize:
     description: initialize
     source: hosted
-    version: "0.6.0"
+    version: "0.6.0+1"
   logging:
     description: logging
     source: hosted
