@@ -1,4 +1,6 @@
-# Polymer Snippets
+# Polymer Snippets (Deprecated)
+
+**These samples are no longer maintained.**
 
 Small, useful, snippets/samples that show how to do things the Polymer way.
 
