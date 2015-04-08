@@ -62,3 +62,5 @@ transformers:
     - web/core_elements/core_toolbar/adding_button_rows/index.html
     - web/core_elements/core_toolbar/changing_the_toolbar_size/index.html
     - web/core_elements/core_toolbar/using_core_toolbar/index.html
+- $dart2js:
+    $include: "**/*.polymer.bootstrap.dart"
