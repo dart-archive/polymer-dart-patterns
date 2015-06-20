@@ -39,10 +39,10 @@ transformers:
     - web/forms/binding_a_boolean_field_to_a_checkbox/index.html
     - web/forms/binding_to_a_text_input/index.html
     - web/forms/binding_to_a_textarea/index.html
+    - web/forms/implementing_simple_autocompletion/index.html
     - web/forms/implementing_simple_validation/index.html
     - web/forms/selecting_one_item_using_radio_buttons/index.html
     - web/forms/selecting_many_items_using_checkboxes/index.html
-    - web/forms/implementing_simple_validation/index.html
 
     - web/events/using_custom_events/index.html
 
