@@ -64,12 +64,11 @@ class MyElement extends PolymerElement {
   }
 
   void findCandidates(Event event, Object object, CoreInput target) {
+    matchingCandidates.clear();
     inputQuery = target.value;
     if (inputQuery.length < 1) {
-      matchingCandidates.clear();
       return;
     }
-    matchingCandidates.clear();
     queryCandidates().then((List<String> candidates) {
       matchingCandidates.addAll(candidates);
       if (!candidates.contains(selectedCandidate)) {
