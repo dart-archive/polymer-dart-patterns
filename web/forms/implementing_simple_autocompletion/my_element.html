@@ -2,6 +2,14 @@
 <link rel="import" href="packages/core_elements/core_input.html">
 <polymer-element name="my-element">
   <template>
+    <style>
+      ul.candidate-list li {
+        list-style-type: none;
+      }
+      ul.candidate-list li .selected {
+        background-color: #ddd;
+      }
+    </style>
     <input is="core-input" on-keyup="{{findCandidates}}" on-keydown="{{keyDown}}" placeholder="Type slowly">
     <template if="{{!matchingCandidates.isEmpty}}">
       <ul class="candidate-list">
@@ -11,14 +19,6 @@
                            value="[[candidate]]"
                            inputQuery="[[inputQuery]]"></match-element>
           </li>
-          <style>
-            .candidate-list li {
-              list-style-type: none;
-            }
-            .candidate-list li .selected {
-              background-color: #ddd;
-            }
-          </style>
         </template>
       </ul>
     </template>
