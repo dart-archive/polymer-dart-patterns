@@ -70,7 +70,13 @@ class MyElement extends PolymerElement {
       return;
     }
     queryCandidates().then((List<String> candidates) {
-      matchingCandidates.addAll(candidates);
+      // Note that we may well end up with multiple requests being in flight at
+      // the same time. We deal with this rather simply by clearing our
+      // candidate list once more. Another solution would be to cancel the
+      // previous in-flight request before making a new one.
+      matchingCandidates
+        ..clear()
+        ..addAll(candidates);
       if (!candidates.contains(selectedCandidate)) {
         selectedItemIndex = -1;
         selectedCandidate = "";
