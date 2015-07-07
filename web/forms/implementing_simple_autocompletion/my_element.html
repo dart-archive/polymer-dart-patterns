@@ -1,0 +1,26 @@
+<link rel="import" href="match_element.html">
+<link rel="import" href="packages/core_elements/core_input.html">
+<polymer-element name="my-element">
+  <template>
+    <style>
+      ul.candidate-list li {
+        list-style-type: none;
+      }
+      ul.candidate-list li .selected {
+        background-color: #ddd;
+      }
+    </style>
+    <input is="core-input" on-keyup="{{findCandidates}}" on-keydown="{{keyDown}}" placeholder="Type slowly">
+    <template if="{{!matchingCandidates.isEmpty}}">
+      <ul class="candidate-list">
+        <template repeat="{{candidate in matchingCandidates}}">
+          <li>
+            <match-element class="{{ { 'selected': candidate == selectedCandidate } }}"
+                           value="[[candidate]]"
+                           inputQuery="[[inputQuery]]"></match-element>
+          </li>
+        </template>
+      </ul>
+    </template>
+  </template>
+</polymer-element>
