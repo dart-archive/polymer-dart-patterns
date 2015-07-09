@@ -88,6 +88,7 @@ that it runs in both JS and Dartium without errors or warnings.
 - [Selecting one item using radio buttons](web/forms/selecting_one_item_using_radio_buttons/)
 - [Selecting many items using checkboxes](web/forms/selecting_many_items_using_checkboxes/)
 - [Implementing simple validation](web/forms/implementing_simple_validation/)
+- [Implementing simple autocompletion](web/forms/implementing_simple_autocompletion/)
 
 ### Events
 
