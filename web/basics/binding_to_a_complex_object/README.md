@@ -1,13 +1,14 @@
-# Binding to a Complex Object
+# Binding to a Field
 
-Ports https://github.com/PolymerLabs/polymer-snippets/blob/bcd7951a63bb178e8752da2939a37dc955c42b1a/snippets/basics/binding-to-a-complex-object.html
+Ports https://github.com/PolymerLabs/polymer-snippets/blob/f5651613ea5db9c2e50a2f4df8f27c64c07755db/snippets/basics/binding-to-a-property.html
 
-Shows data binding to a complex property.
-Use an element property in a template using **double mustaches** (`{{}}`), and
-use the **dot** operator ('.') to access child properties:
+Shows simple use of **data binding** in a Polymer element.
 
-    <template>
-      <div>{{person.name.first}} {{person.name.last}}.
-        ...
-      </div>
-    </template>
+For Polymer elements, the model is the element itself, and any
+@observable field is available in the template within **double mustaches**
+(`{{}}`).
+
+See
+[binding-to-a-text-input.html](../forms/binding-to-a-text-input.html)
+for a version of this snippet where the `color` property can be modified
+using a text `<input>`, resulting in **two-way data binding**.
