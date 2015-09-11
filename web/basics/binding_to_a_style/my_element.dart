@@ -2,14 +2,24 @@
 library web.basics.binding_to_a_style;
 
 import 'package:polymer/polymer.dart';
+import 'package:web_components/web_components.dart' show HtmlImport;
 
-@CustomTag('my-element')
+@PolymerRegister('my-element')
 class MyElement extends PolymerElement {
-  @observable String color = 'red';
+  @property
+  String color = 'red';
+
+  @Property(computed: 'computeStyle(color)')
+  String colorStyle;
 
   MyElement.created() : super.created();
 
-  void toggleColor() {
+  @eventHandler
+  String computeStyle(color) => 'color: $color';
+
+  @eventHandler
+  toggleColor() {
     color = color == 'red' ? 'green' : 'red';
+    this.notifyPath('color', color);
   }
 }

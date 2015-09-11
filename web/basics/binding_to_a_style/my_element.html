@@ -1,6 +1,6 @@
-<polymer-element name="my-element">
+<dom-module name="my-element">
   <template>
-    <p>My favorite color is <span style="color:{{color}}">{{color}}</span>.</p>
-    <button on-tap="{{toggleColor}}">Toogle color</button>
+    <p>My favorite color is <span style$="{{colorStyle}}">{{color}}</span>.</p>
+    <button on-tap="toggleColor">Toggle color</button>
   </template>
-</polymer-element>
+</dom-module>
