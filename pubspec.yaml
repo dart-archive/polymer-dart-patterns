@@ -11,11 +11,11 @@ transformers:
     entry_points:
     - web/basics/binding_to_a_field/index.html
     - web/basics/binding_to_a_complex_object/index.html
-   # - web/basics/binding_to_a_map/index.html
-   # - web/basics/binding_to_a_native_html_element/index.html
-   # - web/basics/binding_to_a_style/index.html
-   # - web/basics/finding_shadow_dom_elements/index.html
-   # - web/basics/using_bind_to_create_a_single_template_instance/index.html
+    - web/basics/binding_to_a_map/index.html
+    - web/basics/binding_to_a_native_html_element/index.html
+    - web/basics/binding_to_a_style/index.html
+    - web/basics/finding_shadow_dom_elements/index.html
+    - web/basics/using_bind_to_create_a_single_template_instance/index.html
    # - web/basics/creating_a_one_time_binding/index.html
    # - web/basics/using_a_computed_property/index.html
 
