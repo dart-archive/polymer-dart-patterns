@@ -48,13 +48,13 @@ transformers:
 
    # - web/events/using_custom_events/index.html
 
-   # - web/styling_elements/applying_styles_by_piercing_shadow_dom_boundaries/index.html
-   # - web/styling_elements/defining_styles_inside_a_polymer_element/index.html
-   # - web/styling_elements/programmatically_changing_the_styles_of_an_element/index.html
-   # - web/styling_elements/styling_distributed_nodes/index.html
-   # - web/styling_elements/using_host_context_to_theme_an_element/index.html
-   # - web/styling_elements/using_host_with_a_css_selector/index.html
-   # - web/styling_elements/using_host_with_pseudo_classes/index.html
+    - web/styling_elements/applying_styles_by_piercing_shadow_dom_boundaries/index.html
+    - web/styling_elements/defining_styles_inside_a_polymer_element/index.html
+    - web/styling_elements/programmatically_changing_the_styles_of_an_element/index.html
+    - web/styling_elements/styling_distributed_nodes/index.html
+    - web/styling_elements/using_host_context_to_theme_an_element/index.html
+    - web/styling_elements/using_host_with_a_css_selector/index.html
+    - web/styling_elements/using_host_with_pseudo_classes/index.html
 
     - web/layout_attributes/nesting_flex_layouts/index.html
     - web/layout_attributes/using_flex/index.html
@@ -67,6 +67,14 @@ transformers:
 
 - reflectable:
     entry_points:
+    - web/styling_elements/applying_styles_by_piercing_shadow_dom_boundaries/index.dart
+    - web/styling_elements/defining_styles_inside_a_polymer_element/index.html
+    - web/styling_elements/programmatically_changing_the_styles_of_an_element/index.html
+    - web/styling_elements/styling_distributed_nodes/index.html
+    - web/styling_elements/using_host_context_to_theme_an_element/index.html
+    - web/styling_elements/using_host_with_a_css_selector/index.html
+    - web/styling_elements/using_host_with_pseudo_classes/index.html
+
     - web/layout_attributes/nesting_flex_layouts/index.dart
     - web/layout_attributes/using_flex/index.dart
     - web/layout_attributes/using_layout_attributes/index.dart
@@ -87,5 +95,5 @@ dependency_overrides:
     git:
       ref: 0.2.0-dev
       url: https://github.com/dart-lang/polymer_interop.git
-  reflectable:
-    path: '../reflectable/reflectable'
+  reflectable: 0.2.0
+#    path: '../reflectable/reflectable'
