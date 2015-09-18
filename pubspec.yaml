@@ -56,9 +56,9 @@ transformers:
    # - web/styling_elements/using_host_with_a_css_selector/index.html
    # - web/styling_elements/using_host_with_pseudo_classes/index.html
 
-   # - web/layout_attributes/nesting_flex_layouts/index.html
-   # - web/layout_attributes/using_flex/index.html
-   # - web/layout_attributes/using_layout_attributes/index.html
+    - web/layout_attributes/nesting_flex_layouts/index.html
+    - web/layout_attributes/using_flex/index.html
+    - web/layout_attributes/using_layout_attributes/index.html
 
     - web/polymer_elements/paper_toolbar/adding_a_menu_button/index.html
     - web/polymer_elements/paper_toolbar/adding_button_rows/index.html
@@ -67,6 +67,10 @@ transformers:
 
 - reflectable:
     entry_points:
+    - web/layout_attributes/nesting_flex_layouts/index.dart
+    - web/layout_attributes/using_flex/index.html
+    - web/layout_attributes/using_layout_attributes/index.html
+
     - web/paper_elements/paper_toolbar/adding_a_menu_button/index.html
     - web/paper_elements/paper_toolbar/adding_button_rows/index.html
     - web/paper_elements/paper_toolbar/changing_the_toolbar_size/index.html
