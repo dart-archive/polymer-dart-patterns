@@ -1,26 +1,45 @@
-<link rel="import" href="packages/polymer/polymer.html">
-<dom-module id="my-element" ><!-- layout vertical -->
-  <!--<style>-->
-    <!--div {-->
-      <!--background: lightgreen;-->
-      <!--border: 1px dotted white;-->
-    <!--}-->
-  <!--</style>-->
+<dom-module id="my-element">
   <template>
-    <!--<div layout horizontal id="header">-->
-      <!--<div>Menu1</div>-->
-      <!--<div flex>Menu2</div>-->
-      <!--<div>Menu3</div>-->
-    <!--</div>-->
-    <!--<div flex layout horizontal id="main">-->
-      <!--<div flex layout vertical>-->
-        <!--<div>Section 1</div>-->
-        <!--<div>Section 2</div>-->
-        <!--<div>Section 3</div>-->
-      <!--</div>-->
-      <!--<div flex>Col</div>-->
-    <!--</div>-->
-    <!--<div id="footer">Footer</div>-->
+    <style>
+      div {
+        background: lightgreen;
+        border: 1px dotted white;
+      }
+      :host {
+        @apply(--layout-vertical);
+        @apply(--layout-flex);
+      }
+      #header {
+        @apply(--layout-horizontal);
+      }
+      #menu2 {
+        @apply(--layout-flex);
+      }
+      #main {
+        @apply(--layout-horizontal);
+        @apply(--layout-flex);
+      }
+      #sections {
+        @apply(--layout-vertical);
+        @apply(--layout-flex);
+      }
+      #col {
+        @apply(--layout-flex);
+      }
+    </style>
+    <div id="header">
+      <div>Menu1</div>
+      <div id="menu2">Menu2</div>
+      <div>Menu3</div>
+    </div>
+    <div id="main">
+      <div id="sections">
+        <div>Section 1</div>
+        <div>Section 2</div>
+        <div>Section 3</div>
+      </div>
+      <div id="col">Col</div>
+    </div>
+    <div id="footer">Footer</div>
   </template>
-  <script type="application/dart" src="my_element.dart"></script>
 </dom-module>

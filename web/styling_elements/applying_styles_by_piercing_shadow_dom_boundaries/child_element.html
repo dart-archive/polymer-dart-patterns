@@ -1,8 +1,14 @@
-<link rel="import" href="packages/polymer/polymer.html">
-
-<polymer-element name="child-element" noscript>
+<dom-module id="child-element">
   <template>
+    <style>
+      h2 {
+        color: var(--my-element-title-color);
+      }
+      p {
+        color: var(--my-element-text-color);
+      }
+    </style>
     <h2>Heading inside child-element</h2>
   </template>
-</polymer-element>
+</dom-module>
 

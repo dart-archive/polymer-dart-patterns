@@ -1,11 +1,20 @@
-<link rel="import" href="packages/polymer/polymer.html">
 <dom-module id="my-vertical-element">
   <template>
-    <section class="layout vertical">
+    <style>
+      :host {
+        display: block;
+      }
+      div {
+        background: lightgreen;
+      }
+      section {
+        @apply(--layout-horizontal);
+      }
+    </style>
+    <section>
       <div>Foo</div>
       <div>Bar</div>
       <div>Baz</div>
     </section>
   </template>
-  <script type="application/dart" src="my_vertical_element.dart"></script>
 </dom-module>

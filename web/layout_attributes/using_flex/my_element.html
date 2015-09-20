@@ -1,16 +1,18 @@
-<link rel="import" href="packages/polymer/polymer.html">
 <dom-module id="my-element">
   <template>
     <style>
-      [flex] {
+      #flex {
         background: lightgreen;
+        @apply(--layout-flex);
+      }
+      section {
+        @apply(--layout-horizontal);
       }
     </style>
-    <section layout horizontal>
+    <section>
       <div>Foo</div>
-      <div flex>Bar</div>
+      <div id="flex">Bar</div>
       <div>Baz</div>
     </section>
   </template>
-  <script type="application/dart" src="my_element.dart"></script>
 </dom-module>

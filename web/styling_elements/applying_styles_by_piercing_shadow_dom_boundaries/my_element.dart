@@ -3,17 +3,9 @@ library my_element;
 
 import 'package:web_components/web_components.dart' show HtmlImport;
 import 'package:polymer/polymer.dart';
+import 'child_element.dart' as child_element;
 
 @PolymerRegister('my-element')
 class MyElement extends PolymerElement {
-  final List<String> colors = ['red', 'green', 'blue'];
-  int index = 0;
-
   MyElement.created() : super.created();
-
-  @eventHandler
-  void changeColor([e, _]) { //Event e, Object detail, Node sender) {
-    // Cycle through this.colors.
-    this.style.color = this.colors[index++ % colors.length];
-  }
 }

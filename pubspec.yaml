@@ -68,32 +68,26 @@ transformers:
 - reflectable:
     entry_points:
     - web/styling_elements/applying_styles_by_piercing_shadow_dom_boundaries/index.dart
-    - web/styling_elements/defining_styles_inside_a_polymer_element/index.html
-    - web/styling_elements/programmatically_changing_the_styles_of_an_element/index.html
-    - web/styling_elements/styling_distributed_nodes/index.html
-    - web/styling_elements/using_host_context_to_theme_an_element/index.html
-    - web/styling_elements/using_host_with_a_css_selector/index.html
-    - web/styling_elements/using_host_with_pseudo_classes/index.html
+    - web/styling_elements/defining_styles_inside_a_polymer_element/index.dart
+    - web/styling_elements/programmatically_changing_the_styles_of_an_element/index.dart
+    - web/styling_elements/styling_distributed_nodes/index.dart
+    - web/styling_elements/using_host_context_to_theme_an_element/index.dart
+    - web/styling_elements/using_host_with_a_css_selector/index.dart
+    - web/styling_elements/using_host_with_pseudo_classes/index.dart
 
     - web/layout_attributes/nesting_flex_layouts/index.dart
     - web/layout_attributes/using_flex/index.dart
     - web/layout_attributes/using_layout_attributes/index.dart
-
-    - web/paper_elements/paper_toolbar/adding_a_menu_button/index.html
-    - web/paper_elements/paper_toolbar/adding_button_rows/index.html
-    - web/paper_elements/paper_toolbar/changing_the_toolbar_size/index.html
-    - web/paper_elements/paper_toolbar/using_paper_toolbar/index.html
 
 - $dart2js:
     $include: '**/*.bootstrap.initialize.dart'
 dependency_overrides:
   polymer:
     git:
-      ref: behaviors
+      ref: aea190df60e6c9d20078d89919443dea8e1b1997
       url: https://github.com/dart-lang/polymer-dart.git
   polymer_interop:
     git:
       ref: 0.2.0-dev
       url: https://github.com/dart-lang/polymer_interop.git
   reflectable: 0.2.0
-#    path: '../reflectable/reflectable'
