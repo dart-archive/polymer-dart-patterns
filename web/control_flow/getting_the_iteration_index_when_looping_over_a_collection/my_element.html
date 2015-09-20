@@ -1,7 +1,7 @@
-<polymer-element name="my-element">
+<dom-module name="my-element">
   <template>
-    <template repeat="{{fruit in fruits | enumerate}}">
-      <div>{{fruit.index + 1}}. {{fruit.value}}</div>
-    </template>
+  	<template is="dom-repeat" items="{{fruits}}">
+  		<div><span>{{index}}</span>. <span>{{item}}</span></div>
+  	</template>
   </template>
-</polymer-element>
+</dom-module>

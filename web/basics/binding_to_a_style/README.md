@@ -1,14 +1,12 @@
-# Binding to a Field
+# Binding to a Style
 
-Ports https://github.com/PolymerLabs/polymer-snippets/blob/f5651613ea5db9c2e50a2f4df8f27c64c07755db/snippets/basics/binding-to-a-property.html
+Ports https://github.com/PolymerLabs/polymer-snippets
 
-Shows simple use of **data binding** in a Polymer element.
+Shows use of data binding to set an element's inline style.
+In this example, as the value of `color` changes,
+the value of `<p>`'s 'color' inline style updates.
 
-For Polymer elements, the model is the element itself, and any
-@observable field is available in the template within **double mustaches**
-(`{{}}`).
+Uses computed values.
 
-See
-[binding-to-a-text-input.html](../forms/binding-to-a-text-input.html)
-for a version of this snippet where the `color` property can be modified
-using a text `<input>`, resulting in **two-way data binding**.
+Read
+[A Guide to Computed Properties](https://www.polymer-project.org/1.0/docs/devguide/properties.html#computed-properties).
