@@ -1,7 +1,7 @@
 import 'package:polymer/polymer.dart';
 import 'my_element.dart';
 
-/// Silence the analyzer[MyElement]
+/// Silence analyzer [MyElement]
 main() async {
   await initPolymer();
 }

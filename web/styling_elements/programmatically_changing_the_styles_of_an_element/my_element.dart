@@ -12,7 +12,7 @@ class MyElement extends PolymerElement {
   MyElement.created() : super.created();
 
   @eventHandler
-  void changeColor([e, _]) { //Event e, Object detail, Node sender) {
+  void changeColor([_, __]) {
     // Cycle through this.colors.
     this.style.color = this.colors[index++ % colors.length];
   }
