@@ -1,7 +1,7 @@
-<polymer-element name="my-element">
+<dom-module name="my-element">
   <template>
     <div>{{messageValidationError}}</div>
-    <input type="text" value="{{message}}" placeholder="Type something">
+    <input type="text" value="{{message::input}}" placeholder="Type something">
     <div id="message">{{message}}</div>
   </template>
-</polymer-element>
+</dom-module>

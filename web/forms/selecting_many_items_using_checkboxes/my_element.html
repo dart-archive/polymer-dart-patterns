@@ -1,17 +1,17 @@
-<polymer-element name="my-element">
+<dom-module id="my-element">
   <template>
-    <div on-change="{{updateSelectedColors}}">
-      <template repeat="{{item in items}}">
+    <div on-change="updateSelectedColors">
+      <template is="dom-repeat" items="{{items}}">
         <label>{{item.color}}
           <input type="checkbox"
                  value="{{item.color}}"
-                 checked="{{item.checked}}">
+                 checked="{{item.checked::change}}">
         </label>
       </template>
     </div>
     <hr>
-    <template repeat="{{color in selectedColors}}">
+    <template is="dom-repeat" items="{{selectedColors}}" as="color">
       <div>{{color}}</div>
     </template>
   </template>
-</polymer-element>
+</dom-module>

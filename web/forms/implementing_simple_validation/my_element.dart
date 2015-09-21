@@ -1,25 +1,27 @@
 @HtmlImport('my_element.html')
-library web.forms.implementing_simple_validation;
+library my_element;
 
+import 'package:web_components/web_components.dart' show HtmlImport;
 import 'package:polymer/polymer.dart';
 
-@CustomTag('my-element')
+@PolymerRegister('my-element')
 class MyElement extends PolymerElement {
-  static const int MIN_LENGTH = 5;
-  static const int MAX_LENGTH = 50;
-  @observable String message = '';
-  @observable String messageValidationError = '';
+  static const int _MIN_LENGTH = 5;
+  static const int _MAX_LENGTH = 50;
+  @Property(observer: 'messageChanged') String message = '';
+  @property String messageValidationError = '';
 
   MyElement.created() : super.created();
 
-  void messageChanged() {
+  @eventHandler
+  void messageChanged([_, __]) {
     var trimmedMessage = message.trim();
-    if (trimmedMessage.length < MIN_LENGTH ||
-        trimmedMessage.length > MAX_LENGTH) {
-      messageValidationError = 'Must be between $MIN_LENGTH and '
-                               '$MAX_LENGTH characters.';
+    if (trimmedMessage.length < _MIN_LENGTH ||
+        trimmedMessage.length > _MAX_LENGTH) {
+      set('messageValidationError',
+          'Must be between $_MIN_LENGTH and $_MAX_LENGTH characters.');
     } else {
-      messageValidationError = '';
+      set('messageValidationError', '');
     }
   }
 }
