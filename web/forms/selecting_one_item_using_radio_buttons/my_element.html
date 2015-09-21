@@ -1,13 +1,12 @@
-<polymer-element name="my-element">
+<dom-module id="my-element">
   <template>
-    <div on-change="{{updateSelectedColor}}">
-      <template repeat="{{colors}}">
-        <label>{{}}
-          <input type="radio" name="colors" value="{{}}">
+    <div on-change="updateSelectedColor">
+      <template is="dom-repeat" items="{{colors}}">
+        <label><span>{{item}}</span>
+          <input type="radio" name="colors" value="{{item}}">
         </label>
       </template>
-
     </div>
     <div>{{selectedColor}}</div>
   </template>
-</polymer-element>
+</dom-module>

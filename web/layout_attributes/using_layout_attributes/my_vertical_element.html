@@ -1,0 +1,20 @@
+<dom-module id="my-vertical-element">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+      div {
+        background: lightgreen;
+      }
+      section {
+        @apply(--layout-horizontal);
+      }
+    </style>
+    <section>
+      <div>Foo</div>
+      <div>Bar</div>
+      <div>Baz</div>
+    </section>
+  </template>
+</dom-module>

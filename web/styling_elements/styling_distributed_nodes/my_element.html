@@ -1,18 +1,20 @@
-<link rel="import" href="packages/polymer/polymer.html">
-
-<polymer-element name="my-element" noscript>
+<dom-module name="my-element">
   <template>
     <style>
-      ::content p {
+      .content-wrapper > ::content p {
         color: red;
       }
 
-      ::content .blue {
+      .content-wrapper > ::content .blue {
         color: blue;
       }
     </style>
-    <content select=".blue"></content>
+    <div class="content-wrapper">
+      <content select=".blue"></content>
+    </div>
     <p>Inside my-element</p>
-    <content></content>
+    <div class="content-wrapper">
+      <content></content>
+    </div>
   </template>
-</polymer-element>
+</dom-module>
