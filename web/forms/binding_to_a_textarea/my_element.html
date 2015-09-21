@@ -1,6 +1,7 @@
-<polymer-element name="my-element">
+<dom-module id="my-element">
   <template>
-      <textarea value="{{message}}" placeholder="Type something"> </textarea>
-      <div id="message">{{message}}</div>
+    <textarea value="{{message::input}}"
+              placeholder="Type something"></textarea>
+    <div id="message">{{message}}</div>
   </template>
-</polymer-element>
+</dom-module>

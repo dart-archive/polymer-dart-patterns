@@ -1,10 +1,11 @@
 @HtmlImport('my_element.html')
-library web.forms.binding_to_a_textarea;
+library my_element;
 
+import 'package:web_components/web_components.dart' show HtmlImport;
 import 'package:polymer/polymer.dart';
 
-@CustomTag('my-element')
+@PolymerRegister('my-element')
 class MyElement extends PolymerElement {
-  @observable String message = '';
+  @property String message = '';
   MyElement.created() : super.created();
 }

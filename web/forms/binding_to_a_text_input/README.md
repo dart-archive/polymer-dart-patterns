@@ -15,15 +15,19 @@ so that modifying one changes the other.
 ## How it works
 
 The MyElement class (`my_element.dart`) defines a String object
-annotated with `@observable`:
+annotated with `@property`:
 
-    @observable String message = '';
+    @property String message = '';
 
 The HTML code (`my_element.html`) binds this string
 to the `value` attribute of a text field
-using the _binding_ notation (`{{message}}`):
+using the _binding_ notation (`{{message::input}}`):
 
-    <input type="text" value="{{message}}" placeholder="Type something">
+    <input type="text" value="{{message::input}}" placeholder="Type something">
+
+`::input` ensures that `message` is updated when the `<input>` element fires the
+`input` event. For more details about binding to native elements see 
+https://www.polymer-project.org/1.0/docs/devguide/data-binding.html#two-way-native
 
 The HTML code embeds the value of the String in an element on the page
 (in this example a `div`).

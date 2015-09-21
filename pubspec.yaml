@@ -38,13 +38,13 @@ transformers:
    # - web/observing_changes/observing_changes_to_light_dom_children/index.html
    # - web/observing_changes/watching_for_changes_to_a_nested_object/index.html
 
-   # - web/forms/binding_a_boolean_field_to_a_checkbox/index.html
-   # - web/forms/binding_to_a_text_input/index.html
-   # - web/forms/binding_to_a_textarea/index.html
-   # - web/forms/implementing_simple_autocompletion/index.html
-   # - web/forms/implementing_simple_validation/index.html
-   # - web/forms/selecting_one_item_using_radio_buttons/index.html
-   # - web/forms/selecting_many_items_using_checkboxes/index.html
+    - web/forms/binding_a_boolean_field_to_a_checkbox/index.html
+    - web/forms/binding_to_a_text_input/index.html
+    - web/forms/binding_to_a_textarea/index.html
+    - web/forms/implementing_simple_autocompletion/index.html
+    - web/forms/implementing_simple_validation/index.html
+    - web/forms/selecting_one_item_using_radio_buttons/index.html
+    - web/forms/selecting_many_items_using_checkboxes/index.html
 
    # - web/events/using_custom_events/index.html
 
@@ -67,6 +67,14 @@ transformers:
 
 - reflectable:
     entry_points:
+    - web/forms/binding_a_boolean_field_to_a_checkbox/index.dart
+    - web/forms/binding_to_a_text_input/index.dart
+    - web/forms/binding_to_a_textarea/index.dart
+    - web/forms/implementing_simple_autocompletion/index.dart
+    - web/forms/implementing_simple_validation/index.dart
+    - web/forms/selecting_one_item_using_radio_buttons/index.dart
+    - web/forms/selecting_many_items_using_checkboxes/index.dart
+
     - web/styling_elements/applying_styles_by_piercing_shadow_dom_boundaries/index.dart
     - web/styling_elements/defining_styles_inside_a_polymer_element/index.dart
     - web/styling_elements/programmatically_changing_the_styles_of_an_element/index.dart
