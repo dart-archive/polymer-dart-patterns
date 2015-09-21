@@ -11,7 +11,7 @@
     </style>
     <input is="paper-input" on-keyup="findCandidates" on-keydown="keyDown"
            placeholder="Type slowly">
-    <template is="dom-if" if="{{!matchingCandidates.isEmpty}}">
+    <template is="dom-if" if="{{matchingCandidates.length}}">
       <ul class="candidate-list">
         <template is="dom-repeat" items="{{matchingCandidates}}"
                   as="candidate">

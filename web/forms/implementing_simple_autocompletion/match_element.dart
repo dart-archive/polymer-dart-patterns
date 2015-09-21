@@ -8,15 +8,15 @@ import 'package:polymer/polymer.dart';
 class MatchElement extends PolymerElement {
   /// Candidate string.
   /// The matching string which we want to display highlighted.
-  @Property(observer: 'valueChanged') String value;
+  @property String value;
 
   /// Input query.
   /// The query whose first match in `value` we want to display highlighted.
-  @Property(observer: 'valueChanged') String inputQuery = '';
+  @property String inputQuery = '';
 
   MatchElement.created() : super.created();
 
-  @eventHandler
+  @Observe('value, inputQuery')
   valueChanged(_, __) => Polymer.dom(root).innerHtml = highlightedValue;
 
   /// Highlight the match of `inputQuery` in value.
