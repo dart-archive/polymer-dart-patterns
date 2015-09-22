@@ -1,12 +1,12 @@
-<polymer-element name="my-element">
+<dom-module id="my-element">
   <template>
     <content select=".crucial"></content>
     <content select=".ordinary"></content>
-    <button on-tap="{{showNodesAndEntryPoints}}">
+    <button on-tap="showNodesAndEntryPoints">
       Show nodes and entry points
     </button>
-    <template repeat="{{el in nodesAndEntryPoints}}">
-      <div>{{el}}</div>
+    <template is="dom-repeat" items="{{nodesAndEntryPoints}}">
+      <div>{{item}}</div>
     </template>
   </template>
-</polymer-element>
+</dom-module>

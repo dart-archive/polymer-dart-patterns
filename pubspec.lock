@@ -95,8 +95,8 @@ packages:
     version: "0.1.0"
   polymer:
     description:
-      ref: behaviors
-      resolved-ref: b11c5c2ef63361672f8478a934692616d5ade58a
+      ref: aea190df60e6c9d20078d89919443dea8e1b1997
+      resolved-ref: aea190df60e6c9d20078d89919443dea8e1b1997
       url: "git@github.com:dart-lang/polymer-dart.git"
     source: git
     version: "0.17.0-dev"

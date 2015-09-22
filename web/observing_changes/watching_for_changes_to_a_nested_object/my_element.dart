@@ -1,29 +1,31 @@
 @HtmlImport('my_element.html')
-library web.watching_for_changes_to_a_nested_objects;
+library my_element;
 
 import 'dart:html';
-
-import 'package:observe/observe.dart';
+import 'package:web_components/web_components.dart' show HtmlImport;
 import 'package:polymer/polymer.dart';
 
-class Thing extends Observable {
-  @observable String color;
+class Thing extends JsProxy {
+  String color;
   Thing(this.color);
 }
 
-@CustomTag('my-element')
+@PolymerRegister('my-element')
 class MyElement extends PolymerElement {
-  @observable String message = '';
-  @observable Thing thing = new Thing('red');
+  @property String message = '';
+  @property Thing thing = new Thing('red');
 
   MyElement.created() : super.created();
 
-  @ObserveProperty('thing.color')
-  colorObserver(oldValue, newValue) {
-    message = 'Color changed from $oldValue to $newValue';
+  String _oldColor;
+  @Observe('thing.color')
+  colorObserver(newValue) {
+    set('message', 'Color changed from $_oldColor to $newValue');
+    _oldColor = newValue;
   }
 
-  void changeColor(Event e) {
-    thing.color = thing.color == 'red' ? 'green' : 'red';
+  @eventHandler
+  void changeColor(Event e, [_]) {
+    set('thing.color', thing.color == 'red' ? 'green' : 'red');
   }
 }

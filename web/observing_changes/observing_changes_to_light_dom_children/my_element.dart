@@ -1,27 +1,39 @@
 @HtmlImport('my_element.html')
-library web.observing_changes.observing_changes_to_light_dom_children;
+library my_element;
 
 import 'dart:html';
-
+import 'package:web_components/web_components.dart' show HtmlImport;
 import 'package:polymer/polymer.dart';
 
-@CustomTag('my-element')
+@PolymerRegister('my-element')
 class MyElement extends PolymerElement {
-  @observable String message = '';
+  int _counter = 1;
 
-  MyElement.created() : super.created() {
-    onMutation(this).then(childrenUpdated);
+  @property String message = '';
+
+  MutationObserver observer;
+  MyElement.created() : super.created();
+
+  ready() {
+    // onMutation callback isn't supported in Polymer 1.0 anymore
+    observer = new MutationObserver((mutations, _) {
+      _childrenUpdated(mutations);
+    });
+    observer.observe(this, childList: true, subtree: true);
   }
 
-  void childrenUpdated(List mutations) {
-    message = "New <div> with "
-        "text '${mutations[0].addedNodes[0].text}'"
-        " added to light DOM.";
-    // Monitor again.
-    onMutation(this).then(childrenUpdated);
+  void _childrenUpdated(List mutations) {
+    set(
+        'message',
+        "New <div> with text '${mutations[0].addedNodes[0].text}'"
+        " added to light DOM.");
+//    observer.observe(this, childList: true, subtree: true);
   }
 
-  void addDivToLightDom(Event e) {
-    this.children.add(new DivElement()..text = "I am new");
+  @eventHandler
+  void addDivToLightDom([Event e, _]) {
+    Polymer
+        .dom(this)
+        .append(new DivElement()..text = "I am new (${_counter++})");
   }
 }

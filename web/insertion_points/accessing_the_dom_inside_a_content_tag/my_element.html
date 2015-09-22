@@ -1,10 +1,10 @@
-<polymer-element name="my-element">
+<dom-module id="my-element">
   <template>
     <content id="crucial" select=".crucial"></content>
-    <button on-tap="{{showDistributedNodes}}">Show distributed nodes</button>
-    <button on-tap="{{showChildren}}">Show children</button>
-    <template repeat="{{node in theNodes}}">
+    <button on-tap="showDistributedNodes">Show distributed nodes</button>
+    <button on-tap="showChildren">Show children</button>
+    <template is="dom-repeat" items="{{theNodes}}" as="node">
       <div>{{node}}</div>
     </template>
   </template>
-</polymer-element>
+</dom-module>

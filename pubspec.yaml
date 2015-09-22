@@ -3,11 +3,11 @@ description: Port of https://github.com/PolymerLabs/polymer-snippets
 environment:
   sdk: '>=1.2.0 <2.0.0'
 dependencies:
+  polymer: ^0.17.0
   polymer_elements:
     git: git@github.com:dart-lang/polymer_elements.git
-  web_components: ^0.12.0
-  polymer: ^0.17.0
   reflectable: 0.2.0
+  web_components: ^0.12.0
 transformers:
 - web_components:
     entry_points:
@@ -27,17 +27,17 @@ transformers:
    # - web/control_flow/using_conditional_templates/index.html
    # - web/control_flow/using_template_repeat_with_a_table_row_or_an_option/index.html
 
-   # - web/insertion_points/creating_an_insertion_point_using_the_control_tag/index.html
-   # - web/insertion_points/creating_insertion_points_using_the_select_attribute/index.html
-   # - web/insertion_points/accessing_the_dom_inside_a_content_tag/index.html
-   # - web/insertion_points/retrieving_the_insertion_points_for_distributed_nodes/index.html
+    - web/insertion_points/creating_an_insertion_point_using_the_content_tag/index.html
+    - web/insertion_points/creating_insertion_points_using_the_select_attribute/index.html
+    - web/insertion_points/accessing_the_dom_inside_a_content_tag/index.html
+    - web/insertion_points/retrieving_the_insertion_points_for_distributed_nodes/index.html
 
-   # - web/inheritance/extending_a_polymer_element/index.html
-   # - web/inheritance/overriding_an_inherited_method/index.html
+#    - web/inheritance/extending_a_polymer_element/index.html
+#    - web/inheritance/overriding_an_inherited_method/index.html
 
-   # - web/observing_changes/observing_changes_to_element_fields/index.html
-   # - web/observing_changes/observing_changes_to_light_dom_children/index.html
-   # - web/observing_changes/watching_for_changes_to_a_nested_object/index.html
+    - web/observing_changes/observing_changes_to_element_fields/index.html
+    - web/observing_changes/observing_changes_to_light_dom_children/index.html
+    - web/observing_changes/watching_for_changes_to_a_nested_object/index.html
 
     - web/forms/binding_a_boolean_field_to_a_checkbox/index.html
     - web/forms/binding_to_a_text_input/index.html
@@ -68,6 +68,15 @@ transformers:
 
 - reflectable:
     entry_points:
+    - web/insertion_points/creating_an_insertion_point_using_the_content_tag/index.dart
+    - web/insertion_points/creating_insertion_points_using_the_select_attribute/index.dart
+    - web/insertion_points/accessing_the_dom_inside_a_content_tag/index.dart
+    - web/insertion_points/retrieving_the_insertion_points_for_distributed_nodes/index.dart
+
+    - web/observing_changes/observing_changes_to_element_fields/index.dart
+    - web/observing_changes/observing_changes_to_light_dom_children/index.dart
+    - web/observing_changes/watching_for_changes_to_a_nested_object/index.dart
+
     - web/forms/binding_a_boolean_field_to_a_checkbox/index.dart
     - web/forms/binding_to_a_text_input/index.dart
     - web/forms/binding_to_a_textarea/index.dart
@@ -96,7 +105,8 @@ dependency_overrides:
   polymer:
     git:
       url: git@github.com:dart-lang/polymer-dart.git
-      ref: behaviors
+      ref: aea190df60e6c9d20078d89919443dea8e1b1997
+  reflectable: 0.2.0
   polymer_interop:
     git:
       ref: 0.2.0-dev

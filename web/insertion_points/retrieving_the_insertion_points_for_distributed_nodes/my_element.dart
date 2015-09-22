@@ -1,20 +1,22 @@
 @HtmlImport('my_element.html')
-library web.insertion_points.retrieving_the_insertion_points_for_distributed_nodes;
+library my_element;
 
 import 'dart:html' show Element;
-
+import 'package:web_components/web_components.dart' show HtmlImport;
 import 'package:polymer/polymer.dart';
 
-@CustomTag('my-element')
+@PolymerRegister('my-element')
 class MyElement extends PolymerElement {
-  final List<String> nodesAndEntryPoints = toObservable([]);
+  @property /*final*/ List<String> nodesAndEntryPoints = [];
 
   MyElement.created() : super.created();
 
-  void showNodesAndEntryPoints() {
-    nodesAndEntryPoints.clear();
-    nodesAndEntryPoints.addAll(this.children.map((child) =>
-        '${child.outerHtml} ------> '
-        '${(child.getDestinationInsertionPoints()[0] as Element).outerHtml}'));
+  @eventHandler
+  void showNodesAndEntryPoints([_, __]) {
+    clear('nodesAndEntryPoints');
+    addAll(
+        'nodesAndEntryPoints',
+        Polymer.dom(this).children.map((child) => '${child.outerHtml} ------> '
+            '${(Polymer.dom(child).getDestinationInsertionPoints()[0] as Element).outerHtml}'));
   }
 }
