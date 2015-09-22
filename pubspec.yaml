@@ -7,6 +7,7 @@ dependencies:
     git: git@github.com:dart-lang/polymer_elements.git
   web_components: ^0.12.0
   polymer: ^0.17.0
+  reflectable: 0.2.0
 transformers:
 - web_components:
     entry_points:
@@ -46,7 +47,7 @@ transformers:
     - web/forms/selecting_one_item_using_radio_buttons/index.html
     - web/forms/selecting_many_items_using_checkboxes/index.html
 
-   # - web/events/using_custom_events/index.html
+    - web/events/using_custom_events/index.html
 
     - web/styling_elements/applying_styles_by_piercing_shadow_dom_boundaries/index.html
     - web/styling_elements/defining_styles_inside_a_polymer_element/index.html
@@ -75,6 +76,8 @@ transformers:
     - web/forms/selecting_one_item_using_radio_buttons/index.dart
     - web/forms/selecting_many_items_using_checkboxes/index.dart
 
+    - web/events/using_custom_events/index.dart
+
     - web/styling_elements/applying_styles_by_piercing_shadow_dom_boundaries/index.dart
     - web/styling_elements/defining_styles_inside_a_polymer_element/index.dart
     - web/styling_elements/programmatically_changing_the_styles_of_an_element/index.dart
@@ -92,10 +95,9 @@ transformers:
 dependency_overrides:
   polymer:
     git:
-      ref: aea190df60e6c9d20078d89919443dea8e1b1997
-      url: https://github.com/dart-lang/polymer-dart.git
+      url: git@github.com:dart-lang/polymer-dart.git
+      ref: behaviors
   polymer_interop:
     git:
       ref: 0.2.0-dev
       url: https://github.com/dart-lang/polymer_interop.git
-  reflectable: 0.2.0
