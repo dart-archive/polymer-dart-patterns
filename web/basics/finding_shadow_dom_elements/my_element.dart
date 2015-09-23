@@ -1,14 +1,15 @@
 @HtmlImport('my_element.html')
-library web.basics.finding_shadow_dom_elements;
+library my_element;
 
+import 'package:web_components/web_components.dart' show HtmlImport;
 import 'package:polymer/polymer.dart';
 
-@CustomTag('my-element')
+@PolymerRegister('my-element')
 class MyElement extends PolymerElement {
-
   MyElement.created() : super.created();
 
-  void findNodes() {
+  @eventHandler
+  void findNodes([_, __]) {
     this.$['myDiv'].querySelector('p').text = 'New content';
   }
 }

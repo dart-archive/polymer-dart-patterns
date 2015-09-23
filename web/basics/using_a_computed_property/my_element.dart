@@ -1,15 +1,21 @@
 @HtmlImport('my_element.html')
-library web.basics.using_a_computed_property;
+library my_element;
 
+import 'package:web_components/web_components.dart' show HtmlImport;
 import 'package:polymer/polymer.dart';
 
-@CustomTag('my-element')
+@PolymerRegister('my-element')
 class MyElement extends PolymerElement {
-  @observable String firstName = 'Seth';
-  @observable String lastName = 'Ladd';
+  @property String firstName = 'Seth';
+  @property String lastName = 'Ladd';
+
+  // TODO(zoechi) computed property throws on page load
+  @Property(computed: 'computeFullName(firstName, lastName')
+  String fullName = '';
 
   MyElement.created() : super.created();
 
-  @ComputedProperty('firstName + " " + lastName')
-  String get fullName => readValue(#fullName);
+  @eventHandler
+  String computeFullName(String firstName, String lastName) =>
+      '$firstName $lastName';
 }

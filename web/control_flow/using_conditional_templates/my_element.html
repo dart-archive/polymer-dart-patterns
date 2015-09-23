@@ -1,15 +1,15 @@
-<polymer-element name="my-element">
+<dom-module id="my-element">
   <template>
-    <template if="{{showAnswer}}">
+    <template is="dom-if" if="{{showAnswer}}">
       <div>42</div>
-      <button on-tap="{{toggleView}}">Show question</button>
+      <button on-tap="toggleView">Show question</button>
     </template>
-    <template if="{{!showAnswer}}">
+    <template is="dom-if" if="{{!showAnswer}}">
       <div>
         What is the answer to "The Ultimate Question of Life, the
         Universe, and Everything"?
       </div>
-      <button on-tap="{{toggleView}}">Show answer</button>
+      <button on-tap="toggleView">Show answer</button>
     </template>
   </template>
-</polymer-element>
+</dom-module>

@@ -1,11 +1,11 @@
-<polymer-element name="my-element">
+<dom-module id="my-element">
 <template>
-    <template bind="{{person}}">
-      <template bind="{{name}}">
-        <div>{{first}} {{last}}</div>
+    <template is="dom-bind" person="{{person}}">
+      <template is="dom-bind" name="{{person.name}}">
+        <div><span>{{name.first}}</span> <span>{{name.last}}</span></div>
       </template>
       <div>{{title}}</div>
       <div>{{company.name}}</div>
     </template>
   </template>
-</polymer-element>
+</dom-module>

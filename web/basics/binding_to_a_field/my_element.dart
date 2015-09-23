@@ -1,10 +1,12 @@
 @HtmlImport('my_element.html')
-library web.basics.binding_to_a_field;
+library my_element;
 
+import 'package:web_components/web_components.dart' show HtmlImport;
 import 'package:polymer/polymer.dart';
 
-@CustomTag('my-element')
+@PolymerRegister('my-element')
 class MyElement extends PolymerElement {
-  @observable String color = 'red';
+  @property String color = 'red';
+
   MyElement.created() : super.created();
 }

@@ -11,21 +11,22 @@ dependencies:
 transformers:
 - web_components:
     entry_points:
-   # - web/basics/binding_to_a_field/index.html
-   # - web/basics/binding_to_a_complex_object/index.html
-   # - web/basics/binding_to_a_map/index.html
-   # - web/basics/binding_to_a_native_html_element/index.html
-   # - web/basics/binding_to_a_style/index.html
-   # - web/basics/finding_shadow_dom_elements/index.html
-   # - web/basics/using_bind_to_create_a_single_template_instance/index.html
-   # - web/basics/creating_a_one_time_binding/index.html
-   # - web/basics/using_a_computed_property/index.html
+    - web/basics/binding_to_a_field/index.html
+    - web/basics/binding_to_a_complex_object/index.html
+    - web/basics/binding_to_a_map/index.html
+    - web/basics/binding_to_a_native_html_element/index.html
+    - web/basics/binding_to_a_style/index.html
+    - web/basics/finding_shadow_dom_elements/index.html
+    - web/basics/using_bind_to_create_a_single_template_instance/index.html
+    - web/basics/creating_a_one_time_binding/index.html
+    - web/basics/dynamically_adding_a_polymer_element_to_the_dom/index.html
+    - web/basics/using_a_computed_property/index.html
 
-   # - web/control_flow/conditionally_hiding_an_element/index.html
-   # - web/control_flow/getting_the_iteration_index_when_looping_over_a_collection/index.html
-   # - web/control_flow/looping_over_a_collection_using_iterative_templates/index.html
-   # - web/control_flow/using_conditional_templates/index.html
-   # - web/control_flow/using_template_repeat_with_a_table_row_or_an_option/index.html
+    - web/control_flow/conditionally_hiding_an_element/index.html
+    - web/control_flow/getting_the_iteration_index_when_looping_over_a_collection/index.html
+    - web/control_flow/looping_over_a_collection_using_iterative_templates/index.html
+    - web/control_flow/using_conditional_templates/index.html
+#    - web/control_flow/using_template_repeat_with_a_table_row_or_an_option/index.html
 
     - web/insertion_points/creating_an_insertion_point_using_the_content_tag/index.html
     - web/insertion_points/creating_insertion_points_using_the_select_attribute/index.html
@@ -68,6 +69,23 @@ transformers:
 
 - reflectable:
     entry_points:
+    - web/basics/binding_to_a_field/index.dart
+    - web/basics/binding_to_a_complex_object/index.dart
+    - web/basics/binding_to_a_map/index.dart
+    - web/basics/binding_to_a_native_html_element/index.dart
+    - web/basics/binding_to_a_style/index.dart
+    - web/basics/finding_shadow_dom_elements/index.dart
+    - web/basics/using_bind_to_create_a_single_template_instance/index.dart
+    - web/basics/creating_a_one_time_binding/index.dart
+    - web/basics/dynamically_adding_a_polymer_element_to_the_dom/index.dart
+    - web/basics/using_a_computed_property/index.dart
+
+    - web/control_flow/conditionally_hiding_an_element/index.dart
+    - web/control_flow/getting_the_iteration_index_when_looping_over_a_collection/index.dart
+    - web/control_flow/looping_over_a_collection_using_iterative_templates/index.dart
+    - web/control_flow/using_conditional_templates/index.dart
+    - web/control_flow/using_template_repeat_with_a_table_row_or_an_option/index.dart
+
     - web/insertion_points/creating_an_insertion_point_using_the_content_tag/index.dart
     - web/insertion_points/creating_insertion_points_using_the_select_attribute/index.dart
     - web/insertion_points/accessing_the_dom_inside_a_content_tag/index.dart

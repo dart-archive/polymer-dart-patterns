@@ -1,5 +1,5 @@
 @HtmlImport('my_element.html')
-library web.forms.selecting_many_elements_using_checkboxes;
+library my_element;
 
 import 'package:web_components/web_components.dart' show HtmlImport;
 import 'package:polymer/polymer.dart';

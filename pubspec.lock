@@ -110,7 +110,7 @@ packages:
   polymer_interop:
     description:
       ref: "0.2.0-dev"
-      resolved-ref: f104d1bd4bea355131e9ca0b9c4df2c3dd4ba13e
+      resolved-ref: "6477d497b25cc4d13b255c2eb27053985667d3dc"
       url: "https://github.com/dart-lang/polymer_interop.git"
     source: git
     version: "0.2.0"

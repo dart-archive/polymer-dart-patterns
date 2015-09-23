@@ -1,7 +1,7 @@
-<polymer-element name="my-element">
+<dom-module id="my-element">
   <template>
-    <label>Set value of color: <input type="text" value="{{color}}"></label>
-    <p>Initial value of color: [[color]]</p>
-    <p>Current value of color: {{color}}</p>
+    <label>Set value of color: <input type="text" value="{{color::change}}"></label>
+    <p>Initial value of color: <span>{{readonlyColor}}</span></p>
+    <p>Current value of color: <span>{{color}}</span></p>
   </template>
-</polymer-element>
+</dom-module>

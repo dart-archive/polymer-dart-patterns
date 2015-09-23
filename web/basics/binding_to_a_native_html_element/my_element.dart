@@ -1,11 +1,13 @@
 @HtmlImport('my_element.html')
-library web.basics.binding_to_a_native_html_element;
+library my_element;
 
+import 'package:web_components/web_components.dart' show HtmlImport;
 import 'package:polymer/polymer.dart';
 
-@CustomTag('my-element')
+@PolymerRegister('my-element')
 class MyElement extends PolymerElement {
-  @observable var val = 10;
+  @property var val1 = 10;
+  @property var val2 = 10;
 
   MyElement.created() : super.created();
 }

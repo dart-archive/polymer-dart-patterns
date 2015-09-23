@@ -1,10 +1,10 @@
-<polymer-element name="my-element">
+<dom-module id="my-element">
   <template>
    <div>The Big Lebowski</div>
-    <p hidden?="{{shortView}}">
+    <p hidden$="{{shortView}}">
       'Dude' Lebowski, mistaken for a millionaire Lebowski, seeks restitution
       for his ruined rug and enlists his bowling buddies to help get it.
     </p>
-    <button on-tap="{{toggleView}}">Toggle View</button>
+    <button on-tap="toggleView">Toggle View</button>
   </template>
-</polymer-element>
+</dom-module>

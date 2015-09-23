@@ -1,5 +1,5 @@
 @HtmlImport('parent_element.html')
-library web.events.using_custom_events.parent_element;
+library parent_element;
 
 import 'dart:html' show Event, Node;
 import 'package:web_components/web_components.dart' show HtmlImport;

@@ -1,12 +1,18 @@
 @HtmlImport('my_element.html')
-library web.control_flow.looping_over_a_collection_using_iterative_templates;
+library my_element;
 
 import 'package:polymer/polymer.dart';
+import 'package:web_components/web_components.dart' show HtmlImport;
 
-@CustomTag('my-element')
+@PolymerRegister('my-element')
 class MyElement extends PolymerElement {
-  final List<String> fruits = toObservable(
-      ['apple', 'banana', 'fig', 'kiwi', 'guava']);
+  @property /*final*/ List<String> fruits = [
+    'apple',
+    'banana',
+    'fig',
+    'kiwi',
+    'guava'
+  ];
 
   MyElement.created() : super.created() {}
 }

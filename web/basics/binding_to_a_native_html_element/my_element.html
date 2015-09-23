@@ -1,6 +1,8 @@
-<polymer-element name="my-element">
+<dom-module name="my-element">
   <template>
-    <div><input type="range" value="{{val}}"></div>
-    <p>{{val}}</p>
+    <div><input type="range" value="{{val1::change}}"></div>
+    <p>{{val1}}</p>
+    <div><input type="range" value="{{val2::input}}"></div>
+    <p>{{val2}}</p>
   </template>
-</polymer-element>
+</dom-module>
