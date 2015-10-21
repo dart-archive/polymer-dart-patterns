@@ -10,8 +10,9 @@
       </template>
     </div>
     <hr>
-    <template is="dom-repeat" items="{{selectedColors}}" as="color">
-      <div>{{color}}</div>
+    <template is="dom-repeat" items="{{items}}"
+              filter="filterSelected" observe="checked">
+      <div>{{item.color}}</div>
     </template>
   </template>
 </dom-module>
