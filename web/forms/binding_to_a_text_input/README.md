@@ -28,6 +28,8 @@ using the _binding_ notation (`{{message::input}}`):
 `::input` ensures that `message` is updated when the `<input>` element fires the
 `input` event. For more details about binding to native elements see 
 https://www.polymer-project.org/1.0/docs/devguide/data-binding.html#two-way-native
+Alternatively you can use `::change` to update the binding when the input 
+element loses the focus.
 
 The HTML code embeds the value of the String in an element on the page
 (in this example a `div`).

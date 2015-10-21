@@ -13,7 +13,7 @@ class MyElement extends PolymerElement {
 
   MyElement.created() : super.created();
 
-  @eventHandler
+  @reflectable
   void messageChanged([_, __]) {
     var trimmedMessage = message.trim();
     if (trimmedMessage.length < _MIN_LENGTH ||

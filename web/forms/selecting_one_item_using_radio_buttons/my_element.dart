@@ -12,7 +12,7 @@ class MyElement extends PolymerElement {
 
   MyElement.created() : super.created();
 
-  @eventHandler
+  @reflectable
   void updateSelectedColor([Event e, _]) {
     set('selectedColor', (e.target as InputElement).value);
   }

@@ -6,7 +6,7 @@ import 'package:web_components/web_components.dart' show HtmlImport;
 
 @PolymerRegister('my-element')
 class MyElement extends PolymerElement {
-  @property /*final*/ List<String> fruits = [
+  @property final List<String> fruits = [
     'apple',
     'banana',
     'fig',

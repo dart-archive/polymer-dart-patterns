@@ -8,7 +8,7 @@ import 'package:polymer/polymer.dart';
 class ChildElement extends PolymerElement {
   ChildElement.created() : super.created();
 
-  @eventHandler
+  @reflectable
   void fireEvent([_, __]) {
     fire('spoken', detail: {'message': this.$['myInput'].value});
   }

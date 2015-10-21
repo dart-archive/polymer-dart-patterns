@@ -7,13 +7,13 @@ import 'package:polymer/polymer.dart';
 @PolymerRegister('my-element')
 class MyElement extends PolymerElement {
   final List<String> colors = ['red', 'green', 'blue'];
-  int index = 0;
+  int _index = 0;
 
   MyElement.created() : super.created();
 
-  @eventHandler
+  @reflectable
   void changeColor([_, __]) {
     // Cycle through this.colors.
-    this.style.color = this.colors[index++ % colors.length];
+    this.style.color = this.colors[_index++ % colors.length];
   }
 }

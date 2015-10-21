@@ -1,7 +1,6 @@
 @HtmlImport('my_element.html')
 library my_element;
 
-import 'dart:html' show Event, Node;
 import 'package:web_components/web_components.dart' show HtmlImport;
 import 'package:polymer/polymer.dart';
 
@@ -11,7 +10,7 @@ class MyElement extends PolymerElement {
 
   MyElement.created() : super.created();
 
-  @eventHandler
+  @reflectable
   void toggleView([_, __]) {
     set('showAnswer', !showAnswer);
   }

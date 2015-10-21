@@ -8,12 +8,12 @@ import 'package:polymer/polymer.dart';
 class MyElement extends PolymerElement {
   @property String color = 'red';
 
-  @eventHandler
+  @reflectable
   String colorStyle(String color) => 'color: ${color};';
 
   MyElement.created() : super.created();
 
-  @eventHandler
+  @reflectable
   void toggleColor([_, __]) {
     set('color', color == 'red' ? 'green' : 'red');
   }

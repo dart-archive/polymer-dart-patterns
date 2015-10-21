@@ -10,7 +10,7 @@ class MyElement extends PolymerElement {
 
   MyElement.created() : super.created();
 
-  @eventHandler
+  @reflectable
   void toggleView([_, __]) {
     set('shortView', !this.shortView);
   }

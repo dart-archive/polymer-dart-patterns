@@ -8,8 +8,8 @@ import 'package:polymer/polymer.dart';
 class MyElement extends PolymerElement {
   MyElement.created() : super.created();
 
-  @eventHandler
+  @reflectable
   void findNodes([_, __]) {
-    this.$['myDiv'].querySelector('p').text = 'New content';
+    $['myDiv'].querySelector('p').text = 'New content';
   }
 }

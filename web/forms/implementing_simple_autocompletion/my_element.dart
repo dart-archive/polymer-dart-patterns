@@ -13,7 +13,6 @@ import 'match_element.dart';
 @PolymerRegister('my-element')
 class MyElement extends PolymerElement {
   /// In a real project, the following would live elsewhere, e.g. a backend.
-  // TODO(zoechi) report reflectable failure when this field is public
   static const List<String> _hardCodedListOfWords = const [
     "apple",
     "ananas",
@@ -33,14 +32,13 @@ class MyElement extends PolymerElement {
   ];
 
   @property String inputQuery;
-  @property List<String> matchingCandidates =
-      []; // TODO(zoechi) make final again when when dart-lang/polymer-dart#587 is fixed
+  @property final List<String> matchingCandidates = [];
   @property int selectedItemIndex = -1;
   @property String selectedCandidate;
 
   MyElement.created() : super.created() {}
 
-  @eventHandler
+  @reflectable
   void keyDown(Event event, [_]) {
     if (!(event is KeyboardEvent)) {
       return;
@@ -82,15 +80,13 @@ class MyElement extends PolymerElement {
     }
   }
 
-  @eventHandler
+  @reflectable
   String selectedClass(String candidate) =>
       candidate == selectedCandidate ? 'selected' : '';
 
-  @eventHandler
+  @reflectable
   void findCandidates(Event event, _) {
-// TODO(zoechi) use `clear()` when polymer-dart#587 is fixed
-    set('matchingCandidates', []);
-//      clear('matchingCandidates');
+    clear('matchingCandidates');
     set('inputQuery', (event.target as InputElement).value);
     if (inputQuery.length < 1) {
       return;
@@ -101,11 +97,8 @@ class MyElement extends PolymerElement {
       // candidate list once more. Another solution would be to cancel the
       // previous in-flight request before making a new one.
 
-// TODO(zoechi) use `clear()` and `addAll()` when polymer-dart#587 is fixed
-      set('matchingCandidates', candidates);
-//      addAll('matchingCandidates', candidates);
-//        ..clear()
-//        ..addAll(candidates);
+      clear('matchingCandidates');
+      addAll('matchingCandidates', candidates);
       if (!candidates.contains(selectedCandidate)) {
         set('selectedItemIndex', -1);
         set('selectedCandidate', '');

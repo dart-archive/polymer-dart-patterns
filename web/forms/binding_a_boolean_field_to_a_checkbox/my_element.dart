@@ -6,6 +6,6 @@ import 'package:polymer/polymer.dart';
 
 @PolymerRegister('my-element')
 class MyElement extends PolymerElement {
-  @property bool checked = false;
   MyElement.created() : super.created();
+  @property bool checked = false;
 }

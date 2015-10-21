@@ -3,10 +3,9 @@ description: Port of https://github.com/PolymerLabs/polymer-snippets
 environment:
   sdk: '>=1.2.0 <2.0.0'
 dependencies:
-  polymer: ^0.17.0
-  polymer_elements:
-    git: git@github.com:dart-lang/polymer_elements.git
-  reflectable: 0.2.0
+  polymer: 1.0.0-rc.2
+  polymer_elements: 1.0.0-rc.2
+  reflectable: 0.3.3
   web_components: ^0.12.0
 transformers:
 - web_components:
@@ -119,13 +118,3 @@ transformers:
 
 - $dart2js:
     $include: '**/*.bootstrap.initialize.dart'
-dependency_overrides:
-  polymer:
-    git:
-      url: git@github.com:dart-lang/polymer-dart.git
-      ref: aea190df60e6c9d20078d89919443dea8e1b1997
-  reflectable: 0.2.0
-  polymer_interop:
-    git:
-      ref: 0.2.0-dev
-      url: https://github.com/dart-lang/polymer_interop.git

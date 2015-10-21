@@ -5,8 +5,8 @@ Ports https://github.com/PolymerLabs/polymer-snippets/blob/f5651613ea5db9c2e50a2
 Shows simple use of **data binding** in a Polymer element.
 
 For Polymer elements, the model is the element itself, and any
-@observable field is available in the template within **double mustaches**
-(`{{}}`).
+@property field is available in the template within **double mustaches**
+(`{{}}` or `[[]]`).
 
 See
 [binding-to-a-text-input.html](../forms/binding-to-a-text-input.html)

@@ -1,8 +1,8 @@
 <dom-module id="my-element">
   <template>
-    <div on-change="updateSelectedColors">
+    <div>
       <template is="dom-repeat" items="{{items}}">
-        <label>{{item.color}}
+        <label><span>{{item.color}}</span>
           <input type="checkbox"
                  value="{{item.color}}"
                  checked="{{item.checked::change}}">

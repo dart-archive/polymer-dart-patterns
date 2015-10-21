@@ -9,9 +9,10 @@ import 'package:polymer/polymer.dart';
 class MyElement extends PolymerElement {
   String _greeting;
   @property String get greeting => _greeting;
-  set greeting(String value) => set('greeting', value);
+  // TODO(zoechi) remove `@reflectable` when the fix is available dart-lang/reflectable#42
+  @reflectable set greeting(String value) => set('greeting', value);
 
   MyElement.created() : super.created();
 
-  factory MyElement() => new Element.tag('my-element');
+  factory MyElement() => new Element.tag('my-element') as MyElement;
 }

@@ -12,13 +12,13 @@ class MyElement extends PolymerElement {
 
   MyElement.created() : super.created();
 
-  @eventHandler
+  @reflectable
   void colorChanged(String newValue, String oldValue) {
     set('message', 'Color changed from $oldValue to $newValue');
   }
 
-  @eventHandler
-  toggleColor(Event e, Object detail) {
+  @reflectable
+  void toggleColor(Event e, Object detail) {
     set('color', color == 'red' ? 'green' : 'red');
   }
 }

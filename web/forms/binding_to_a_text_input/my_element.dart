@@ -6,6 +6,6 @@ import 'package:polymer/polymer.dart';
 
 @PolymerRegister('my-element')
 class MyElement extends PolymerElement {
-  @property String message = '';
   MyElement.created() : super.created();
+  @property String message = '';
 }

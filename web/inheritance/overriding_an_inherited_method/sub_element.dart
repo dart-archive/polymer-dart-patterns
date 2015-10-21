@@ -1,5 +1,5 @@
 @HtmlImport('sub_element.html')
-library web.inheritance.overriding_an_inherited_method;
+library sub_element;
 
 import 'package:polymer/polymer.dart';
 import 'base_element.dart';

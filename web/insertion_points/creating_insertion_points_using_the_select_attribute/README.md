@@ -11,8 +11,6 @@ The HTML for `<my-element>`
 * [index.html](https://github.com/dart-lang/polymer-dart-snippets/blob/master/web/insertion_points/creating_insertion_points_using_the_select_attribute/index.html):
 An HTML file that uses `<my-element>`
 
-**Note:** This snippet has no Dart code.
-
 
 ## How it works
 

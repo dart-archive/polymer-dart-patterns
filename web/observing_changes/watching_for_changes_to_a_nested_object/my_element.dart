@@ -6,7 +6,7 @@ import 'package:web_components/web_components.dart' show HtmlImport;
 import 'package:polymer/polymer.dart';
 
 class Thing extends JsProxy {
-  String color;
+  @reflectable String color;
   Thing(this.color);
 }
 
@@ -18,13 +18,14 @@ class MyElement extends PolymerElement {
   MyElement.created() : super.created();
 
   String _oldColor;
+
   @Observe('thing.color')
-  colorObserver(newValue) {
+  void colorObserver(newValue) {
     set('message', 'Color changed from $_oldColor to $newValue');
     _oldColor = newValue;
   }
 
-  @eventHandler
+  @reflectable
   void changeColor(Event e, [_]) {
     set('thing.color', thing.color == 'red' ? 'green' : 'red');
   }

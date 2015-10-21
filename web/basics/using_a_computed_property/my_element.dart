@@ -6,16 +6,15 @@ import 'package:polymer/polymer.dart';
 
 @PolymerRegister('my-element')
 class MyElement extends PolymerElement {
+  MyElement.created() : super.created();
   @property String firstName = 'Seth';
   @property String lastName = 'Ladd';
 
-  // TODO(zoechi) computed property throws on page load
-  @Property(computed: 'computeFullName(firstName, lastName')
+  @Property(computed: 'computeFullName(firstName,lastName)')
   String fullName = '';
 
-  MyElement.created() : super.created();
 
-  @eventHandler
+  @reflectable
   String computeFullName(String firstName, String lastName) =>
       '$firstName $lastName';
 }

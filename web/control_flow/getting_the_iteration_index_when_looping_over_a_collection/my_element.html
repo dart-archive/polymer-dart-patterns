@@ -1,7 +1,8 @@
 <dom-module id="my-element">
   <template>
     <template is="dom-repeat" items="{{fruits}}" as="fruit">
-      <div><span>{{addOne(index)}}</span>. <span>{{fruit}}</span></div>
+      <div on-click="clickHandler"><span>{{addOne(index)}}</span>. <span>{{fruit}}</span></div>
     </template>
+    <div>Selected index: <span>{{selectedIndex}}</span></div>
   </template>
 </dom-module>

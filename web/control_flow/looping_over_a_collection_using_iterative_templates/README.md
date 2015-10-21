@@ -15,16 +15,19 @@ Shows iterating over a list of items using **template repeat**.
 
 The MyElement class (`my_element.dart`) defines a list of fruits:
 
-    final List<String> fruits = toObservable(
-        ['apple', 'banana', 'fig', 'kiwi', 'guava']);
-
-When a list is created using `toObservable`, the UI elements bound to the
-list are updated when the list or its elements are modifed.
+    @property final List<String> fruits = 
+        ['apple', 'banana', 'fig', 'kiwi', 'guava'];
 
 In the template code (`my_element.html`), `template repeat` iterates
 over the list of fruit, rendering each with a template:
 
-    <template repeat="{{fruit in fruits}}">
+    <template is="dom-repeat" items="{{fruits}}">
+        <div>{{item}}</div>
+    </template>
+
+or 
+
+    <template is="dom-repeat" items="{{fruits}}" as="fruit">
         <div>{{fruit}}</div>
     </template>
 

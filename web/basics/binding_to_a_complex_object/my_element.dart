@@ -5,19 +5,20 @@ import 'package:web_components/web_components.dart' show HtmlImport;
 import 'package:polymer/polymer.dart';
 
 class Name extends JsProxy {
-  String first, last;
+  @reflectable String first;
+  @reflectable String last;
   Name(this.first, this.last);
 }
 
 class Company extends JsProxy {
-  String name;
+  @reflectable String name;
   Company(this.name);
 }
 
 class Person extends JsProxy {
-  Name name;
-  String title;
-  Company company;
+  @reflectable Name name;
+  @reflectable String title;
+  @reflectable Company company;
   Person(this.name, this.title, this.company);
 }
 

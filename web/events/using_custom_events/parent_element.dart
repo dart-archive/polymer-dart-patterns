@@ -13,7 +13,7 @@ class ParentElement extends PolymerElement {
 
   ParentElement.created() : super.created();
 
-  @eventHandler
+  @reflectable
   void heard(Event e, var detail) {
     set('message', 'heard: ' + detail['message']);
   }

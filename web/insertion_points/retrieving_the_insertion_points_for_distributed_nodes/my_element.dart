@@ -7,11 +7,11 @@ import 'package:polymer/polymer.dart';
 
 @PolymerRegister('my-element')
 class MyElement extends PolymerElement {
-  @property /*final*/ List<String> nodesAndEntryPoints = [];
+  @property final List<String> nodesAndEntryPoints = [];
 
   MyElement.created() : super.created();
 
-  @eventHandler
+  @reflectable
   void showNodesAndEntryPoints([_, __]) {
     clear('nodesAndEntryPoints');
     addAll(

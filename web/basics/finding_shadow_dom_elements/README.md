@@ -26,7 +26,7 @@ _automatic node finding_, returns a reference to the named element.
 The MyElement class (`my_element.dart`) defines the `findNodes` method.
 
     void findNodes() {
-      this.$['myDiv'].querySelector('p').text = 'New content';
+      $['myDiv'].querySelector('p').text = 'New content';
     }
 
 This method finds the node tagged with `myDiv` and replaces the

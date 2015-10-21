@@ -2,23 +2,25 @@
 library my_element;
 
 // TODO(zoechi) <template id="dom-bind"> should not be used inside a Polymer element
+// also doesn't work in Polymer 1.0.0-rc.2: Exception: TypeError: Cannot set property '_parent_person' of undefined
 import 'package:web_components/web_components.dart' show HtmlImport;
 import 'package:polymer/polymer.dart';
 
 class Name extends JsProxy {
-  String first, last;
+  @reflectable String first;
+  @reflectable String last;
   Name(this.first, this.last);
 }
 
 class Company extends JsProxy {
-  String name;
+  @reflectable String name;
   Company(this.name);
 }
 
 class Person extends JsProxy {
-  Name name;
-  String title;
-  Company company;
+  @reflectable Name name;
+  @reflectable String title;
+  @reflectable Company company;
   Person(this.name, this.title, this.company);
 }
 

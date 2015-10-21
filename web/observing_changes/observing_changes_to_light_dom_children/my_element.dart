@@ -30,7 +30,7 @@ class MyElement extends PolymerElement {
 //    observer.observe(this, childList: true, subtree: true);
   }
 
-  @eventHandler
+  @reflectable
   void addDivToLightDom([Event e, _]) {
     Polymer
         .dom(this)
