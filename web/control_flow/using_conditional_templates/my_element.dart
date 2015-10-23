@@ -14,4 +14,7 @@ class MyElement extends PolymerElement {
   void toggleView([_, __]) {
     set('showAnswer', !showAnswer);
   }
+
+  @reflectable
+  String buttonText(_) => 'Show ${showAnswer ? 'question' : 'answer'}';
 }

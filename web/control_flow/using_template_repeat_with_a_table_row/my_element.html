@@ -1,0 +1,22 @@
+<dom-module id="my-element">
+  <template>
+    <style>
+      .table {
+        display: table;
+      }
+      .row {
+        display: table-row;
+      }
+      .cell {
+        display: table-cell;
+      }
+    </style>
+    <div class="table">
+      <template is="dom-repeat" items="{{fruits}}" as="fruit">
+        <div class="row">
+          <div class="cell">{{fruit}}</div>
+        </div>
+      </template>
+    </div>
+  </template>
+</dom-module>

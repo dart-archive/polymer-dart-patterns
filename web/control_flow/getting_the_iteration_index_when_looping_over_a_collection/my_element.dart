@@ -24,6 +24,6 @@ class MyElement extends PolymerElement {
   @reflectable
   void clickHandler(dom.Event event, [_]) {
     set('selectedIndex',
-        new DomRepeatModel.fromEvent(event).jsElement['index'] + 1);
+        new DomRepeatModel.fromEvent(event).index + 1);
   }
 }

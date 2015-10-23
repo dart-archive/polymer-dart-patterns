@@ -8,4 +8,7 @@ import 'package:polymer/polymer.dart';
 class MyElement extends PolymerElement {
   MyElement.created() : super.created();
   @property bool checked = false;
+
+  @reflectable
+  String checkboxLabel(bool checked) => checked ? 'Uncheck' : 'Check';
 }

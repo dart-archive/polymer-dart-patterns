@@ -10,6 +10,6 @@ class MyElement extends PolymerElement {
 
   @reflectable
   void findNodes([_, __]) {
-    $['myDiv'].querySelector('p').text = 'New content';
+    $$('#myDiv > p').text = 'New content';
   }
 }

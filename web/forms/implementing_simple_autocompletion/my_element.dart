@@ -31,9 +31,9 @@ class MyElement extends PolymerElement {
     "strawberry"
   ];
 
+  int _selectedItemIndex = -1;
   @property String inputQuery;
   @property final List<String> matchingCandidates = [];
-  @property int selectedItemIndex = -1;
   @property String selectedCandidate;
 
   MyElement.created() : super.created() {}
@@ -53,7 +53,7 @@ class MyElement extends PolymerElement {
         event.preventDefault();
         break;
       case KeyCode.ENTER:
-        if (selectedItemIndex != -1) {
+        if (_selectedItemIndex != -1) {
           window.alert("You picked ${selectedCandidate} from the list.");
         } else {
           window.alert(
@@ -65,23 +65,23 @@ class MyElement extends PolymerElement {
   }
 
   void _moveSelection(int delta) {
-    set('selectedItemIndex', selectedItemIndex + delta);
-    if (selectedItemIndex < 0) {
-      selectedItemIndex = 0;
+    _selectedItemIndex = _selectedItemIndex + delta;
+    if (_selectedItemIndex < 0) {
+      _selectedItemIndex = 0;
     }
-    if (selectedItemIndex >= matchingCandidates.length) {
-      selectedItemIndex = matchingCandidates.length - 1;
+    if (_selectedItemIndex >= matchingCandidates.length) {
+      _selectedItemIndex = matchingCandidates.length - 1;
     }
-    if (0 <= selectedItemIndex &&
-        selectedItemIndex < matchingCandidates.length) {
-      set('selectedCandidate', matchingCandidates[selectedItemIndex]);
+    if (0 <= _selectedItemIndex &&
+        _selectedItemIndex < matchingCandidates.length) {
+      set('selectedCandidate', matchingCandidates[_selectedItemIndex]);
     } else {
       set('selectedCandidate', '');
     }
   }
 
   @reflectable
-  String selectedClass(String candidate) =>
+  String selectedClass(String candidate, selectedCandidate) =>
       candidate == selectedCandidate ? 'selected' : '';
 
   @reflectable
@@ -100,7 +100,7 @@ class MyElement extends PolymerElement {
       clear('matchingCandidates');
       addAll('matchingCandidates', candidates);
       if (!candidates.contains(selectedCandidate)) {
-        set('selectedItemIndex', -1);
+        _selectedItemIndex = -1;
         set('selectedCandidate', '');
       }
     });
