@@ -1,34 +1,23 @@
 @HtmlImport('match_element.html')
-library web.forms.implementing_simple_autocompletion_match;
+library match_element;
 
-import 'dart:html';
-
+import 'package:web_components/web_components.dart' show HtmlImport;
 import 'package:polymer/polymer.dart';
 
-@CustomTag('match-element')
+@PolymerRegister('match-element')
 class MatchElement extends PolymerElement {
-
   /// Candidate string.
-  ///
   /// The matching string which we want to display highlighted.
-  @published String value;
+  @property String value;
 
   /// Input query.
-  ///
   /// The query whose first match in `value` we want to display highlighted.
-  @published String inputQuery;
+  @property String inputQuery = '';
 
-  NodeValidator nodeValidator;
+  MatchElement.created() : super.created();
 
-  MatchElement.created() : super.created() {
-    nodeValidator = new NodeValidatorBuilder()
-      ..allowTextElements()
-      ..allowElement('strong');
-  }
-
-  void valueChanged(String old) {
-    injectBoundHtml(highlightedValue, element: $['container'], validator: nodeValidator);
-  }
+  @Observe('value, inputQuery')
+  valueChanged(_, __) => Polymer.dom(root).innerHtml = highlightedValue;
 
   /// Highlight the match of `inputQuery` in value.
   String get highlightedValue {
@@ -40,7 +29,6 @@ class MatchElement extends PolymerElement {
     int idx = text.indexOf(query);
     if (idx == -1) {
       return value; // This cannot happen.
-
     }
     String prefix = value.substring(0, idx);
     String matched = value.substring(idx, idx + query.length);

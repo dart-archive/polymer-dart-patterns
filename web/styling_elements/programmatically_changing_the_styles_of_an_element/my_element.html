@@ -1,6 +1,4 @@
-<link rel="import" href="packages/polymer/polymer.html">
-
-<polymer-element name="my-element">
+<dom-module id="my-element">
   <template>
     <style>
       :host {
@@ -8,7 +6,6 @@
       }
     </style>
     <p>Inside my-element</p>
-    <button on-tap="{{changeColor}}">Change color</button>
+    <button on-tap="changeColor">Change color</button>
   </template>
-  <script type="application/dart" src="my_element.dart"></script>
-</polymer-element>
+</dom-module>

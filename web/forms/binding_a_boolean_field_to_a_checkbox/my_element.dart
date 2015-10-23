@@ -1,10 +1,14 @@
 @HtmlImport('my_element.html')
-library web.binding_a_boolean_field_to_a_checkbox.my_element;
+library my_element;
 
+import 'package:web_components/web_components.dart' show HtmlImport;
 import 'package:polymer/polymer.dart';
 
-@CustomTag('my-element')
+@PolymerRegister('my-element')
 class MyElement extends PolymerElement {
-  @observable bool checked = false;
   MyElement.created() : super.created();
+  @property bool checked = false;
+
+  @reflectable
+  String checkboxLabel(bool checked) => checked ? 'Uncheck' : 'Check';
 }

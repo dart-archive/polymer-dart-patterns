@@ -1,16 +1,8 @@
-<link rel="import" href="packages/polymer/polymer.html">
-
-<polymer-element name="child-el" noscript>
-  <template>
-    <p>Inside child-el</p>
-  </template>
-</polymer-element>
-
-<polymer-element name="my-element" noscript>
+<dom-module id="my-element">
   <template>
     <content select="h2"></content>
     <content select=".crucial"></content>
-    <content select="child-el"></content>
+    <content select="child-element"></content>
     <content></content>
   </template>
-</polymer-element>
+</dom-module>

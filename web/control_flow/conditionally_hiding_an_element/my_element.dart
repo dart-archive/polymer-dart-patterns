@@ -1,13 +1,17 @@
 @HtmlImport('my_element.html')
-library web.control_flow.conditionally_hiding_an_element;
+library my_element;
 
+import 'package:web_components/web_components.dart' show HtmlImport;
 import 'package:polymer/polymer.dart';
 
-@CustomTag('my-element')
+@PolymerRegister('my-element')
 class MyElement extends PolymerElement {
-  @observable bool shortView = true;
-  void toggleView() {
-    this.shortView = !this.shortView;
-  }
+  @property bool shortView = true;
+
   MyElement.created() : super.created();
+
+  @reflectable
+  void toggleView([_, __]) {
+    set('shortView', !this.shortView);
+  }
 }

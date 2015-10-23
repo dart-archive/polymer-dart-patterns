@@ -1,28 +1,32 @@
 @HtmlImport('my_element.html')
-library web.insertion_points.accessing_the_dom_inside_a_content_tag;
+library my_element;
 
+import 'dart:html' as dom;
+import 'package:web_components/web_components.dart' show HtmlImport;
 import 'package:polymer/polymer.dart';
 
-@CustomTag('my-element')
+@PolymerRegister('my-element')
 class MyElement extends PolymerElement {
-  final List<String> theNodes = toObservable([]);
+  @property /*final*/ List<String> theNodes = [];
 
   MyElement.created() : super.created();
 
-  void showDistributedNodes() {
-    getNodes(this.$['crucial'].getDistributedNodes());
+  @reflectable
+  void showDistributedNodes([_, __]) {
+    _getNodes((Polymer.dom($['crucial']) as PolymerDom).getDistributedNodes());
   }
 
-  void showChildren() {
-    getNodes(this.children);
+  @reflectable
+  void showChildren([_, __]) {
+    _getNodes((Polymer.dom(this) as PolymerDom).children);
   }
 
-  getNodes(_nodes) {
-    theNodes.clear();
+  _getNodes(List _nodes) {
+    clear('theNodes');
     for (var i = 0; i < _nodes.length; i++) {
-      String html = _nodes[i].outerHtml;
+      String html = (_nodes[i] as dom.Element).outerHtml;
       if (html != null && html.trim().isNotEmpty) {
-        theNodes.add(html);
+        add('theNodes', html);
       }
     }
   }

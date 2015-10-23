@@ -1,16 +1,19 @@
-<link rel="import" href="packages/polymer/polymer.html">
-<link rel="import" href="child_element.html">
-
-<polymer-element name="my-element" noscript>
+<dom-module id="my-element">
   <template>
     <style>
       :host {
         display: block;
         border: 1px solid black;
       }
+      h2 {
+        color: var(--my-element-title-color);
+      }
+      p {
+        color: var(--my-element-text-color);
+      }
     </style>
     <h2>Heading inside my-element</h2>
     <p>Para inside my-element</p>
     <child-element></child-element>
   </template>
-</polymer-element>
+</dom-module>

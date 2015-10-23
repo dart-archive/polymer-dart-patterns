@@ -1,33 +1,37 @@
 @HtmlImport('my_element.html')
-library web.basics.binding_to_a_complex_object;
+library my_element;
 
+import 'package:web_components/web_components.dart' show HtmlImport;
 import 'package:polymer/polymer.dart';
 
-class Name {
-  String first, last;
+class Name extends JsProxy {
+  @reflectable String first;
+  @reflectable String last;
   Name(this.first, this.last);
 }
 
-class Company {
-  String name;
+class Company extends JsProxy {
+  @reflectable String name;
   Company(this.name);
 }
 
-class Person {
-  Name name;
-  String title;
-  Company company;
+class Person extends JsProxy {
+  @reflectable Name name;
+  @reflectable String title;
+  @reflectable Company company;
   Person(this.name, this.title, this.company);
 }
 
-@CustomTag('my-element')
+@PolymerRegister('my-element')
 class MyElement extends PolymerElement {
-  @observable Person person;
-  MyElement.created() : super.created() {
-    person = new Person(
-        new Name('Kathy','Walrath'),
-        'Writer Extraordinaire',
-        new Company('Google')
-    );
+  @property Person person;
+
+  MyElement.created() : super.created();
+
+  ready() {
+    set(
+        'person',
+        new Person(new Name('Kathy', 'Walrath'), 'Writer Extraordinaire',
+            new Company('Google')));
   }
 }

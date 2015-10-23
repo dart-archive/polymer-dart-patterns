@@ -1,30 +1,25 @@
 @HtmlImport('my_element.html')
-library web.forms.selecting_many_elements_using_checkboxes;
+library my_element;
 
+import 'package:web_components/web_components.dart' show HtmlImport;
 import 'package:polymer/polymer.dart';
 
-class Item {
-  String color;
-  bool checked;
+class Item extends JsProxy {
+  @reflectable String color;
+  @reflectable bool checked;
   Item(this.color, this.checked);
 }
 
-@CustomTag('my-element')
+@PolymerRegister('my-element')
 class MyElement extends PolymerElement {
-  final List<Item> items = [
+  MyElement.created() : super.created();
+
+  @property final List<Item> items = [
     new Item('red', false),
     new Item('green', true),
     new Item('blue', false)
   ];
 
-  @observable List<String> selectedColors = toObservable([]);
-
-  void updateSelectedColors() {
-    selectedColors = items.where((item) => item.checked).map(
-        (item) => item.color).toList();
-  }
-
-  MyElement.created() : super.created() {
-    updateSelectedColors();
-  }
+  @reflectable
+  bool filterSelected(Item item) => item.checked;
 }
