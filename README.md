@@ -48,11 +48,10 @@ that it runs in both JS and Dartium without errors or warnings.
 - [Binding to a map](web/basics/binding_to_a_map/)
 - [Binding to a native HTML element](web/basics/binding_to_a_native_html_element/)
 - [Binding to a style](web/basics/binding_to_a_style/)
-- [Using 'bind' to create a single template instance](web/basics/using_bind_to_create_a_single_template_instance/)
 - [Dynamically adding a Polymer element to the DOM](web/basics/dynamically_adding_a_polymer_element_to_the_dom/)
 - [Finding Shadow DOM elements](web/basics/finding_shadow_dom_elements/)
 - [Using a computed property](web/basics/using_a_computed_property/)
-- [Creating a one_time binding](web/basics/creating_a_one_time_binding/)
+- [Creating a read-only property](web/basics/creating_a_read_only_property/)
 
 ### Control flow
 
@@ -60,12 +59,7 @@ that it runs in both JS and Dartium without errors or warnings.
 - [Getting the iteration index when looping over a collection](web/control_flow/getting_the_iteration_index_when_looping_over_a_collection/)
 - [Looping over a collection using iterative templates](web/control_flow/looping_over_a_collection_using_iterative_templates/)
 - [Using conditional templates](web/control_flow/using_conditional_templates/)
-- [Using template repeat with a table row or an option](web/control_flow/using_template_repeat_with_a_table_row_or_an_option/)
-
-### Inheritance
-
-- [Extending a Polymer element](web/inheritance/extending_a_polymer_element/)
-- [Overriding an inherited method](web/inheritance/overriding_an_inherited_method/)
+- [Using template repeat with a table row](web/control_flow/using_template_repeat_with_a_table_row/)
 
 ### Insertion points
 
@@ -77,7 +71,6 @@ that it runs in both JS and Dartium without errors or warnings.
 ### Observing changes
 
 - [Observing changes to element fields](web/observing_changes/observing_changes_to_element_fields/)
-- [Observing changes to light DOM children](web/observing_changes/observing_changes_to_light_dom_children/)
 - [Watching for changes to a nested objects](web/observing_changes/watching_for_changes_to_a_nested_object/)
 
 ### Forms
@@ -106,19 +99,18 @@ that it runs in both JS and Dartium without errors or warnings.
 
 ### Layout attributes
 
-- [Using layout attributes](web/layout_attributes/using_layout_attributes/)
+- [Using layout attributes](web/layout_attributes/using_layout_classes/)
 - [Using flex](web/layout_attributes/using_flex/)
 - [Nesting flex layouts](web/layout_attributes/nesting_flex_layouts/)
 
-### Core elements
+### Polymer elements
 
-Samples using
-[Polymer core elements](http://www.polymer-project.org/docs/elements/core-elements.html).
+Samples using [Polymer elements](https://elements.polymer-project.org/).
 
-#### Core toolbar
+#### Paper toolbar
 
-- [Using core-toolbar](web/core_elements/core_toolbar/using_core_toolbar/)
-- [Adding a menu button](web/core_elements/core_toolbar/adding_a_menu_button/)
-- [Adding button rows](web/core_elements/core_toolbar/adding_button_rows/)
-- [Changing toolbar size](web/core_elements/changing_the_toolbar_size/)
+- [Using paper-toolbar](web/polymer_elements/paper_toolbar/using_paper_toolbar/)
+- [Adding a menu button](web/polymer_elements/paper_toolbar/adding_a_menu_button/)
+- [Adding button rows](web/polymer_elements/paper_toolbar/adding_button_rows/)
+- [Changing toolbar size](web/polymer_elements/paper_toolbar/changing_the_toolbar_size/)
 
