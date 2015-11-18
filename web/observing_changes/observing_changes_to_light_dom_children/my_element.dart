@@ -11,16 +11,16 @@ class MyElement extends PolymerElement {
 
   @property String message = '';
 
-  Object observe;
+  Object _observeHandle;
 
   MyElement.created() : super.created();
 
   void attached() {
-    observe = new PolymerDom($['content']).observeNodes(_childrenUpdated);
+    _observeHandle = new PolymerDom($['content']).observeNodes(_childrenUpdated);
   }
 
   void detached() {
-    new PolymerDom($['content']).unobserveNodes(observe);
+    new PolymerDom($['content']).unobserveNodes(_observeHandle);
   }
 
   void _childrenUpdated(PolymerDomMutation mutations) {
