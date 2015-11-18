@@ -11,10 +11,16 @@ class MyElement extends PolymerElement {
 
   @property String message = '';
 
+  Object observe;
+
   MyElement.created() : super.created();
 
-  void ready() {
-    new PolymerDom($['content']).observeNodes(_childrenUpdated);
+  void attached() {
+    observe = new PolymerDom($['content']).observeNodes(_childrenUpdated);
+  }
+
+  void detached() {
+    new PolymerDom($['content']).unobserveNodes(observe);
   }
 
   void _childrenUpdated(PolymerDomMutation mutations) {
@@ -26,8 +32,7 @@ class MyElement extends PolymerElement {
 
   @reflectable
   void addDivToLightDom([Event e, _]) {
-    Polymer
-        .dom(this)
+    new PolymerDom(this)
         .append(new DivElement()..text = "I am new (${_counter++})");
   }
 }

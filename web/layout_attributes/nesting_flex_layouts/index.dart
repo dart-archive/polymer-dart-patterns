@@ -5,4 +5,3 @@ import 'my_element.dart';
 main() async {
   await initPolymer();
 }
-
