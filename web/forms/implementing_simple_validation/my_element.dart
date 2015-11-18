@@ -6,8 +6,8 @@ import 'package:polymer/polymer.dart';
 
 @PolymerRegister('my-element')
 class MyElement extends PolymerElement {
-  static const int _MIN_LENGTH = 5;
-  static const int _MAX_LENGTH = 50;
+  static const int _minLength = 5;
+  static const int _maxLength = 50;
   @Property(observer: 'messageChanged') String message = '';
   @property String messageValidationError = '';
 
@@ -16,10 +16,10 @@ class MyElement extends PolymerElement {
   @reflectable
   void messageChanged([_, __]) {
     var trimmedMessage = message.trim();
-    if (trimmedMessage.length < _MIN_LENGTH ||
-        trimmedMessage.length > _MAX_LENGTH) {
+    if (trimmedMessage.length < _minLength ||
+        trimmedMessage.length > _maxLength) {
       set('messageValidationError',
-          'Must be between $_MIN_LENGTH and $_MAX_LENGTH characters.');
+          'Must be between $_minLength and $_maxLength characters.');
     } else {
       set('messageValidationError', '');
     }

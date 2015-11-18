@@ -14,5 +14,5 @@ class MyElement extends PolymerElement {
     'guava'
   ];
 
-  MyElement.created() : super.created() {}
+  MyElement.created() : super.created();
 }

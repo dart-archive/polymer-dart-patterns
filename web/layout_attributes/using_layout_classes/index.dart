@@ -6,4 +6,3 @@ import 'my_vertical_element.dart';
 main() async {
   await initPolymer();
 }
-

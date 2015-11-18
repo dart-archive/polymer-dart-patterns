@@ -13,7 +13,6 @@ class MyElement extends PolymerElement {
   @Property(computed: 'computeFullName(firstName,lastName)')
   String fullName = '';
 
-
   @reflectable
   String computeFullName(String firstName, String lastName) =>
       '$firstName $lastName';

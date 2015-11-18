@@ -20,7 +20,7 @@ class MyElement extends PolymerElement {
   String _oldColor;
 
   @Observe('thing.color')
-  void colorObserver(newValue) {
+  void colorObserver(String newValue) {
     set('message', 'Color changed from $_oldColor to $newValue');
     _oldColor = newValue;
   }

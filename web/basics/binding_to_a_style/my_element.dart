@@ -9,7 +9,7 @@ class MyElement extends PolymerElement {
   @property String color = 'red';
 
   @reflectable
-  String colorStyle(String color) => 'color: ${color};';
+  String colorStyle(String color) => 'color: $color;';
 
   MyElement.created() : super.created();
 

@@ -17,7 +17,7 @@ class MatchElement extends PolymerElement {
   MatchElement.created() : super.created();
 
   @Observe('value, inputQuery')
-  valueChanged(_, __) => Polymer.dom(root).innerHtml = highlightedValue;
+  valueChanged(_, __) => new PolymerDom(root).innerHtml = highlightedValue;
 
   /// Highlight the match of `inputQuery` in value.
   String get highlightedValue {
@@ -33,6 +33,6 @@ class MatchElement extends PolymerElement {
     String prefix = value.substring(0, idx);
     String matched = value.substring(idx, idx + query.length);
     String postfix = value.substring(idx + query.length);
-    return "${prefix}<strong>${matched}</strong>${postfix}";
+    return "$prefix<strong>$matched</strong>$postfix";
   }
 }

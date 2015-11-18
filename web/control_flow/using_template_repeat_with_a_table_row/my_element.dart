@@ -8,5 +8,5 @@ import 'package:polymer/polymer.dart';
 class MyElement extends PolymerElement {
   @property final List<String> fruits = ['orange', 'strawberry', 'banana'];
 
-  MyElement.created() : super.created() {}
+  MyElement.created() : super.created();
 }

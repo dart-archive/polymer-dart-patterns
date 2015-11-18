@@ -14,7 +14,7 @@ class MyElement extends PolymerElement {
     'kiwi',
     'guava'
   ];
-  MyElement.created() : super.created() {}
+  MyElement.created() : super.created();
 
   @property int selectedIndex;
 
@@ -23,7 +23,6 @@ class MyElement extends PolymerElement {
 
   @reflectable
   void clickHandler(dom.Event event, [_]) {
-    set('selectedIndex',
-        new DomRepeatModel.fromEvent(event).index + 1);
+    set('selectedIndex', new DomRepeatModel.fromEvent(event).index + 1);
   }
 }
