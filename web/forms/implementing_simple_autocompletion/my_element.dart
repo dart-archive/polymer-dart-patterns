@@ -36,7 +36,7 @@ class MyElement extends PolymerElement {
   @property final List<String> matchingCandidates = [];
   @property String selectedCandidate;
 
-  MyElement.created() : super.created() {}
+  MyElement.created() : super.created();
 
   @reflectable
   void keyDown(Event event, [_]) {
@@ -54,10 +54,10 @@ class MyElement extends PolymerElement {
         break;
       case KeyCode.ENTER:
         if (_selectedItemIndex != -1) {
-          window.alert("You picked ${selectedCandidate} from the list.");
+          window.alert("You picked $selectedCandidate from the list.");
         } else {
           window.alert(
-              "You hit enter on ${inputQuery} without selecting it from the list.");
+              "You hit enter on $inputQuery without selecting it from the list.");
         }
         event.preventDefault();
         break;

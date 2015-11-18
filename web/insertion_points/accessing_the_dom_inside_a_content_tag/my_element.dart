@@ -13,17 +13,17 @@ class MyElement extends PolymerElement {
 
   @reflectable
   void showDistributedNodes([_, __]) {
-    _getNodes((Polymer.dom($['crucial']) as PolymerDom).getDistributedNodes());
+    _getNodes(new PolymerDom($['crucial']).getDistributedNodes());
   }
 
   @reflectable
   void showChildren([_, __]) {
-    _getNodes((Polymer.dom(this) as PolymerDom).children);
+    _getNodes(new PolymerDom(this).children);
   }
 
-  _getNodes(List _nodes) {
+  void _getNodes(List _nodes) {
     clear('theNodes');
-    for (var i = 0; i < _nodes.length; i++) {
+    for (int i = 0; i < _nodes.length; i++) {
       String html = (_nodes[i] as dom.Element).outerHtml;
       if (html != null && html.trim().isNotEmpty) {
         add('theNodes', html);

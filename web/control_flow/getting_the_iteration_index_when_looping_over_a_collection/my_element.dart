@@ -14,7 +14,7 @@ class MyElement extends PolymerElement {
     'kiwi',
     'guava'
   ];
-  MyElement.created() : super.created() {}
+  MyElement.created() : super.created();
 
   @property int selectedIndex;
 

@@ -16,7 +16,7 @@ class MyElement extends PolymerElement {
     clear('nodesAndEntryPoints');
     addAll(
         'nodesAndEntryPoints',
-        Polymer.dom(this).children.map((child) => '${child.outerHtml} ------> '
-            '${(Polymer.dom(child).getDestinationInsertionPoints()[0] as Element).outerHtml}'));
+        new PolymerDom(this).children.map((child) => '${child.outerHtml} ------> '
+            '${(new PolymerDom(child).getDestinationInsertionPoints()[0] as Element).outerHtml}'));
   }
 }
