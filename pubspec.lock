@@ -12,7 +12,7 @@ packages:
   async:
     description: async
     source: hosted
-    version: "1.5.0"
+    version: "1.6.0"
   barback:
     description: barback
     source: hosted
@@ -52,7 +52,7 @@ packages:
   glob:
     description: glob
     source: hosted
-    version: "1.0.5"
+    version: "1.1.0"
   html:
     description: html
     source: hosted
@@ -96,15 +96,15 @@ packages:
   polymer:
     description: polymer
     source: hosted
-    version: "1.0.0-rc.12"
+    version: "1.0.0-rc.13"
   polymer_elements:
     description: polymer_elements
     source: hosted
-    version: "1.0.0-rc.5"
+    version: "1.0.0-rc.6"
   polymer_interop:
     description: polymer_interop
     source: hosted
-    version: "1.0.0-rc.7"
+    version: "1.0.0-rc.8"
   pool:
     description: pool
     source: hosted
@@ -144,7 +144,7 @@ packages:
   stack_trace:
     description: stack_trace
     source: hosted
-    version: "1.5.0"
+    version: "1.6.0"
   string_scanner:
     description: string_scanner
     source: hosted
@@ -152,7 +152,7 @@ packages:
   test:
     description: test
     source: hosted
-    version: "0.12.6+2"
+    version: "0.12.7"
   utf:
     description: utf
     source: hosted
@@ -164,7 +164,7 @@ packages:
   web_components:
     description: web_components
     source: hosted
-    version: "0.12.2"
+    version: "0.12.2+1"
   when:
     description: when
     source: hosted

@@ -5,10 +5,9 @@ environment:
 dependencies:
   polymer: ^1.0.0-rc.12
   polymer_elements: ^1.0.0-rc.5
-  reflectable: ^0.5.1
   web_components: ^0.12.2
 transformers:
-- web_components:
+- polymer:
     entry_points:
     - web/basics/binding_to_a_field/index.html
     - web/basics/binding_to_a_complex_object/index.html
@@ -61,55 +60,6 @@ transformers:
     - web/polymer_elements/paper_toolbar/adding_button_rows/index.html
     - web/polymer_elements/paper_toolbar/changing_the_toolbar_size/index.html
     - web/polymer_elements/paper_toolbar/using_paper_toolbar/index.html
-
-- reflectable:
-    entry_points:
-    - web/basics/binding_to_a_field/index.dart
-    - web/basics/binding_to_a_complex_object/index.dart
-    - web/basics/binding_to_a_map/index.dart
-    - web/basics/binding_to_a_native_html_element/index.dart
-    - web/basics/binding_to_a_style/index.dart
-    - web/basics/finding_shadow_dom_elements/index.dart
-    - web/basics/creating_a_read_only_property/index.dart
-    - web/basics/dynamically_adding_a_polymer_element_to_the_dom/index.dart
-    - web/basics/using_a_computed_property/index.dart
-
-    - web/control_flow/conditionally_hiding_an_element/index.dart
-    - web/control_flow/getting_the_iteration_index_when_looping_over_a_collection/index.dart
-    - web/control_flow/looping_over_a_collection_using_iterative_templates/index.dart
-    - web/control_flow/using_conditional_templates/index.dart
-    - web/control_flow/using_template_repeat_with_a_table_row/index.dart
-
-    - web/insertion_points/creating_an_insertion_point_using_the_content_tag/index.dart
-    - web/insertion_points/creating_insertion_points_using_the_select_attribute/index.dart
-    - web/insertion_points/accessing_the_dom_inside_a_content_tag/index.dart
-    - web/insertion_points/retrieving_the_insertion_points_for_distributed_nodes/index.dart
-
-    - web/observing_changes/observing_changes_to_element_fields/index.dart
-    - web/observing_changes/observing_changes_to_light_dom_children/index.dart
-    - web/observing_changes/watching_for_changes_to_a_nested_object/index.dart
-
-    - web/forms/binding_a_boolean_field_to_a_checkbox/index.dart
-    - web/forms/binding_to_a_text_input/index.dart
-    - web/forms/binding_to_a_textarea/index.dart
-    - web/forms/implementing_simple_autocompletion/index.dart
-    - web/forms/implementing_simple_validation/index.dart
-    - web/forms/selecting_one_item_using_radio_buttons/index.dart
-    - web/forms/selecting_many_items_using_checkboxes/index.dart
-
-    - web/events/using_custom_events/index.dart
-
-    - web/styling_elements/applying_styles_by_piercing_shadow_dom_boundaries/index.dart
-    - web/styling_elements/defining_styles_inside_a_polymer_element/index.dart
-    - web/styling_elements/programmatically_changing_the_styles_of_an_element/index.dart
-    - web/styling_elements/styling_distributed_nodes/index.dart
-    - web/styling_elements/using_host_context_to_theme_an_element/index.dart
-    - web/styling_elements/using_host_with_a_css_selector/index.dart
-    - web/styling_elements/using_host_with_pseudo_classes/index.dart
-
-    - web/layout_attributes/nesting_flex_layouts/index.dart
-    - web/layout_attributes/using_flex/index.dart
-    - web/layout_attributes/using_layout_classes/index.dart
 
 - $dart2js:
     $include: '**/*.bootstrap.initialize.dart'
