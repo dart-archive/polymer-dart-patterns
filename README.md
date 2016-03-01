@@ -85,7 +85,7 @@ that it runs in both JS and Dartium without errors or warnings.
 
 ### Events
 
-- [Using custom events](web/events/using_custom_events//)
+- [Using custom events](web/events/using_custom_events/)
 
 ### Styling elements
 

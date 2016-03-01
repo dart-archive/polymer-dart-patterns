@@ -8,15 +8,19 @@ packages:
   args:
     description: args
     source: hosted
-    version: "0.13.2"
+    version: "0.13.3+3"
   async:
     description: async
     source: hosted
-    version: "1.6.0"
+    version: "1.8.0"
   barback:
     description: barback
     source: hosted
     version: "0.15.2+7"
+  boolean_selector:
+    description: boolean_selector
+    source: hosted
+    version: "1.0.0"
   browser:
     description: browser
     source: hosted
@@ -32,11 +36,11 @@ packages:
   code_transformers:
     description: code_transformers
     source: hosted
-    version: "0.3.1"
+    version: "0.4.0"
   collection:
     description: collection
     source: hosted
-    version: "1.2.0"
+    version: "1.4.0"
   crypto:
     description: crypto
     source: hosted
@@ -48,7 +52,7 @@ packages:
   dart_style:
     description: dart_style
     source: hosted
-    version: "0.2.2"
+    version: "0.2.4"
   glob:
     description: glob
     source: hosted
@@ -64,11 +68,11 @@ packages:
   http_parser:
     description: http_parser
     source: hosted
-    version: "2.0.0"
+    version: "2.1.0"
   initialize:
     description: initialize
     source: hosted
-    version: "0.6.2"
+    version: "0.6.2+1"
   logging:
     description: logging
     source: hosted
@@ -96,11 +100,11 @@ packages:
   polymer:
     description: polymer
     source: hosted
-    version: "1.0.0-rc.13"
+    version: "1.0.0-rc.15"
   polymer_elements:
     description: polymer_elements
     source: hosted
-    version: "1.0.0-rc.6"
+    version: "1.0.0-rc.8"
   polymer_interop:
     description: polymer_interop
     source: hosted
@@ -116,19 +120,19 @@ packages:
   reflectable:
     description: reflectable
     source: hosted
-    version: "0.5.1"
+    version: "0.5.2"
   shelf:
     description: shelf
     source: hosted
-    version: "0.6.4+3"
+    version: "0.6.5"
   shelf_static:
     description: shelf_static
     source: hosted
-    version: "0.2.3+2"
+    version: "0.2.3+3"
   shelf_web_socket:
     description: shelf_web_socket
     source: hosted
-    version: "0.0.1+5"
+    version: "0.1.0"
   source_map_stack_trace:
     description: source_map_stack_trace
     source: hosted
@@ -145,18 +149,22 @@ packages:
     description: stack_trace
     source: hosted
     version: "1.6.0"
+  stream_channel:
+    description: stream_channel
+    source: hosted
+    version: "1.3.1"
   string_scanner:
     description: string_scanner
     source: hosted
-    version: "0.1.4"
+    version: "0.1.4+1"
   test:
     description: test
     source: hosted
-    version: "0.12.7"
+    version: "0.12.11"
   utf:
     description: utf
     source: hosted
-    version: "0.9.0+2"
+    version: "0.9.0+3"
   watcher:
     description: watcher
     source: hosted
@@ -164,7 +172,7 @@ packages:
   web_components:
     description: web_components
     source: hosted
-    version: "0.12.2+1"
+    version: "0.12.2+2"
   when:
     description: when
     source: hosted
@@ -176,4 +184,4 @@ packages:
   yaml:
     description: yaml
     source: hosted
-    version: "2.1.7"
+    version: "2.1.8"
