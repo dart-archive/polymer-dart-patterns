@@ -3,6 +3,7 @@ description: Port of https://github.com/PolymerLabs/polymer-snippets
 environment:
   sdk: '>=1.8.2 <2.0.0'
 dependencies:
+  browser: ^0.10.0+2
   polymer: ^1.0.0-rc.12
   polymer_elements: ^1.0.0-rc.5
   web_components: ^0.12.2
